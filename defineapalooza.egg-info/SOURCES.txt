@@ -1,0 +1,8 @@
+MANIFEST.in
+defineapalooza/__init__.py
+defineapalooza/defineapalooza.py
+defineapalooza.egg-info/PKG-INFO
+defineapalooza.egg-info/SOURCES.txt
+defineapalooza.egg-info/dependency_links.txt
+defineapalooza.egg-info/requires.txt
+defineapalooza.egg-info/top_level.txt
