@@ -1,6 +1,12 @@
 from flask import Flask, g, request, send_from_directory, render_template
 import os
-app = Flask(__name__)
+
+from api_clients.oxford import OxfordClient
+
+app = Flask(__name__, instance_relative_config=True)
+
+app.config.from_object('config.default')
+app.config.from_pyfile('application.cfg', silent=True)
 
 @app.route("/")
 def home():
