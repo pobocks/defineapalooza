@@ -3,7 +3,9 @@ import os
 
 from api_clients.oxford import OxfordClient
 
-app = Flask(__name__, instance_relative_config=True)
+app = Flask(__name__,
+            instance_relative_config=True,
+            instance_path=os.path.abspath('./instance'))
 
 app.config.from_object('config.default')
 app.config.from_pyfile('application.cfg', silent=True)
@@ -21,4 +23,3 @@ def documentation(filename):
         os.path.abspath('./docs/_build/html'),
         filename
     )
-
