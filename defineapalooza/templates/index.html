@@ -1,8 +1,21 @@
 {% extends "layout.html" %}
-{% block head %} {{ super() }} {% endblock head %}
+
+{% block title %}
+Defineapalooza
+{% endblock title %}
+
 {% block content %}
-
-<h1>Defineapalooza!</h1>
-<p>Content will totally go here.</p>
-
+<div class="row">
+  <div class="col-md-2 col-md-offset-4"><h1>Defineapalooza!</h1></div>
+  <div class="col-md-8 col-md-offset-3">
+    <form class="form-basic">
+      {{ word_form.hidden_tag() }}
+      {{ wtf.form_errors(word_form) }}
+      <div class="input-group">
+	{{ wtf.form_field(word_form.word, form_type="inline") }}
+	<span class="input-group-btn">
+	  {{ wtf.form_field(word_form.submit, button_map={'submit': 'success'}) }}
+	</span>
+      </div>
+</div>
 {% endblock content %}

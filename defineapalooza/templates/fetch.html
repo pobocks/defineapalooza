@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+
+{% block title %}
+Results for: {{word}}
+{% endblock title %}
+
+{% block content %}
+{{super()}}
+<div class="row">
+<pre class="col-md-12" style="margin-top: 1em; white-space: pre-wrap;word-break:keep-all">
+  {{data}}
+</pre>
+</div>
+{% endblock content %}

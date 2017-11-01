@@ -1,14 +1,20 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    {% block head %}
-    <meta charset="UTF-8">
-    <title>Defineapalooza!</title>
-    {% endblock head %}
-  </head>
-  <body>
-    <div id="content">
-      {% block content %}{% endblock content %}
-    </div>
-  </body>
-</html>
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block metas %}
+  <meta charset="UTF-8">
+  {{ super() }}
+{% endblock metas %}
+
+{% block html_attribs %}
+  lang="en"
+{% endblock html_attribs %}
+
+{% block body %}
+  <div class="container-fluid">
+      <div class="content col-md-8 col-md-offset-2">
+	{{ super() }}
+      </div>
+  </div>
+{% endblock body %}
+
+

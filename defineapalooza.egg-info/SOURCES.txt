@@ -8,3 +8,4 @@ defineapalooza.egg-info/requires.txt
 defineapalooza.egg-info/top_level.txt
 defineapalooza/templates/index.html
 defineapalooza/templates/layout.html
+defineapalooza/templates/layout.html~
