@@ -35,8 +35,7 @@ def get_oxford_client():
 class WordForm(Form):
     word = StringField("Word to Look Up", validators=[DataRequired()],
                        render_kw={'placeholder': 'Look up...'})
-    
-    submit = SubmitField('Submit')
+    submit = SubmitField('Submit') # Not used currently, but completion sake
 
 # Routes
 
