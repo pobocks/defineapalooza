@@ -13,12 +13,13 @@ from wtforms.validators import DataRequired
 import os
 
 from api_clients.oxford import OxfordClient
+from api import api
 
 app = Flask(__name__,
             instance_relative_config=True,
             instance_path=os.path.abspath('./instance'))
 
-
+app.register_blueprint(api, url_prefix="/api/v1")
 app.config.from_object('config.default')
 app.config.from_pyfile('application.cfg', silent=True)
 
@@ -30,6 +31,8 @@ def get_oxford_client():
     if not hasattr(g, 'oxford_client'):
         g.oxford_client = OxfordClient()
     return g.oxford_client
+
+app.get_oxford_client = get_oxford_client
 
 # Form
 class WordForm(Form):
@@ -51,7 +54,7 @@ def fetch_word():
     word = request.form['word']
     return render_template('fetch.html',
                            word=word,
-                           data=client(word).result().content.decode('utf-8'),
+                           data=client(word).result().json()['results'][0]['lexicalEntries'],
                            word_form=WordForm())
 
 

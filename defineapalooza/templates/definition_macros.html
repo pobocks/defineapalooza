@@ -1,0 +1,48 @@
+{% macro lexical_entry(lex_entry) %}
+<div class="lexical-entry lexical-entry-{{lex_entry['lexicalCategory']|lower}}">
+  {% for an_entry in lex_entry['entries'] %}
+    {{ entry(an_entry) }}
+  {% endfor %}
+</div>
+{% endmacro %}
+
+{% macro entry(an_entry) %}
+<div class="entry">
+  <ul class="senses">
+    {% for a_sense in an_entry['senses'] %}
+    {{sense(a_sense)}}
+    {% endfor %}
+  </ul>
+<div>
+{% endmacro %}
+
+{% macro sense(a_sense) %}
+<li class="sense">
+  <ul class="definitions">
+    {% for a_def in a_sense['definitions'] %}
+    <li>{{ a_def }}</li>
+    {% endfor %}
+    </ul>
+  <ul class="subsenses">
+    {% for a_subsense in a_sense['subsenses'] %}
+      <li>{{subsense(a_subsense)}}</li>
+    {% endfor %}
+  </ul>
+</li>
+{% endmacro %}
+
+{% macro subsense(a_subsense) %}
+<div class="subsense">
+  <ul class="subsense-definitions">
+    {% for a_def in a_subsense['definitions'] %}
+      <li>{{a_def}}</li>
+    {% endfor %}
+  </ul>
+  <ul class="subsense-examples">
+    {% for an_ex in a_subsense['examples'] %}
+      <li>{{ an_ex["text"] }}</li>
+    {% endfor %}
+  </ul>
+</div>
+    
+{% endmacro %}
