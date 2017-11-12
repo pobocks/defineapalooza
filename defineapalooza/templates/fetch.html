@@ -11,6 +11,7 @@ Results for: {{word}}
   {% for le in data %}
     {{dm.lexical_entry(le)}}
   {% endfor %}
+  {{dm.lcsh_subjects(lcsh_data)}}
 </div>
 </div>
 {% endblock content %}

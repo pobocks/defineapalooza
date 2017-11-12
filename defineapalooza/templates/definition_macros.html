@@ -1,48 +1,56 @@
 {% macro lexical_entry(lex_entry) %}
-<div class="lexical-entry lexical-entry-{{lex_entry['lexicalCategory']|lower}}">
+<div class="lexical-entry lexical-entry-{{lex_entry['lexicalCategory']|lower}} panel panel-default">
+  <header class="panel-heading">
+    <h2 class="panel-title">Definition</h2>
+  </header>
+  <div class="panel-body">
   {% for an_entry in lex_entry['entries'] %}
     {{ entry(an_entry) }}
   {% endfor %}
+  </div>
 </div>
 {% endmacro %}
 
 {% macro entry(an_entry) %}
 <div class="entry">
-  <ul class="senses">
-    {% for a_sense in an_entry['senses'] %}
-    {{sense(a_sense)}}
-    {% endfor %}
-  </ul>
-<div>
+  {% for a_sense in an_entry['senses'] %}
+  <p>Sense {{loop.index}}</p>
+  {{sense(a_sense)}}
+  {% endfor %}
+</div>
 {% endmacro %}
 
 {% macro sense(a_sense) %}
-<li class="sense">
-  <ul class="definitions">
+<div class="sense">
+  <ul class="definitions list-group">
     {% for a_def in a_sense['definitions'] %}
-    <li>{{ a_def }}</li>
+      <li class="list-group-item">{{ a_def }}</li>
     {% endfor %}
-    </ul>
-  <ul class="subsenses">
     {% for a_subsense in a_sense['subsenses'] %}
-      <li>{{subsense(a_subsense)}}</li>
-    {% endfor %}
+      {{subsense(a_subsense)}}
+  {% endfor %}
   </ul>
-</li>
+</div>
 {% endmacro %}
 
 {% macro subsense(a_subsense) %}
-<div class="subsense">
-  <ul class="subsense-definitions">
-    {% for a_def in a_subsense['definitions'] %}
-      <li>{{a_def}}</li>
-    {% endfor %}
-  </ul>
-  <ul class="subsense-examples">
-    {% for an_ex in a_subsense['examples'] %}
-      <li>{{ an_ex["text"] }}</li>
-    {% endfor %}
-  </ul>
+{% for a_def in a_subsense['definitions'] %}
+<li class="list-group-item">{{a_def}}</li>
+{% endfor %}
+
+{% endmacro %}
+
+{% macro lcsh_subjects(subjects) %}
+<div class="lcsh-subjects panel panel-default">
+  <header class="panel-heading">
+    <h3 class="panel-title">LCSH Terms</h3>
+  </header>
+  <div class="panel-body">
+    <ul class="subjects list-group">
+      {% for name, url in subjects.items() %}
+      <li class="list-group-item"><a href="{{url}}">{{name}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
-    
 {% endmacro %}

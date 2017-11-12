@@ -178,7 +178,7 @@
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#get--buttass-">GET /buttass/</a></td>
+<td><a class="reference external" href="#get--api-v1-">GET /api/v1/</a></td>
 <td>&#160;</td>
 </tr>
 <tr class="row-odd"><td>&#160;</td>
@@ -186,10 +186,22 @@
 <td>&#160;</td>
 </tr>
 <tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#get--docs-">GET /docs/</a></td>
+<td><a class="reference external" href="#post--">POST /</a></td>
 <td>&#160;</td>
 </tr>
 <tr class="row-odd"><td>&#160;</td>
+<td><a class="reference external" href="#get--api-v1-word-(word)">GET /api/v1/word/(word)</a></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference external" href="#get--static-bootstrap-(path-filename)">GET /static/bootstrap/(path:filename)</a></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference external" href="#get--docs-">GET /docs/</a></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
 <td><a class="reference external" href="#get--docs-(path-filename)">GET /docs/(path:filename)</a></td>
 <td>&#160;</td>
 </tr>
@@ -199,15 +211,37 @@
 <div class="section" id="api-docs">
 <h1>API Docs<a class="headerlink" href="#api-docs" title="Permalink to this headline">¶</a></h1>
 <dl class="get">
-<dt id="get--buttass-">
-<code class="descname">GET </code><code class="descname">/buttass/</code><a class="headerlink" href="#get--buttass-" title="Permalink to this definition">¶</a></dt>
-<dd><p>What?</p>
+<dt id="get--api-v1-">
+<code class="descname">GET </code><code class="descname">/api/v1/</code><a class="headerlink" href="#get--api-v1-" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return list of routes and endpoints</p>
 </dd></dl>
 
 <dl class="get">
 <dt id="get--">
 <code class="descname">GET </code><code class="descname">/</code><a class="headerlink" href="#get--" title="Permalink to this definition">¶</a></dt>
-<dd><p><em>Homepage</em> son</p>
+<dd><p>Our glorious homepage, reknowned in story and song!</p>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--">
+<code class="descname">POST </code><code class="descname">/</code><a class="headerlink" href="#post--" title="Permalink to this definition">¶</a></dt>
+<dd><p>Action for the index page form (in absence of JS). Also contains form.</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v1-word-(word)">
+<code class="descname">GET </code><code class="descname">/api/v1/word/</code><span class="sig-paren">(</span><em>word</em><span class="sig-paren">)</span><a class="headerlink" href="#get--api-v1-word-(word)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return either JSON or HTML representation of a definition</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--static-bootstrap-(path-filename)">
+<code class="descname">GET </code><code class="descname">/static/bootstrap/</code><span class="sig-paren">(</span><em class="property">path: </em><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#get--static-bootstrap-(path-filename)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function used internally to send static files from the static
+folder to the browser.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.5.</span></p>
+</div>
 </dd></dl>
 
 <dl class="get">

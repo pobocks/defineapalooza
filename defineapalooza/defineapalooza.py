@@ -12,8 +12,12 @@ from wtforms.validators import DataRequired
 
 import os
 
-from api_clients.oxford import OxfordClient
+from api_clients import OxfordClient, LCSHClient
 from api import api
+
+from concurrent.futures import as_completed
+
+
 
 app = Flask(__name__,
             instance_relative_config=True,
@@ -31,6 +35,11 @@ def get_oxford_client():
     if not hasattr(g, 'oxford_client'):
         g.oxford_client = OxfordClient()
     return g.oxford_client
+
+def get_lcsh_client():
+    if not hasattr(g, 'lcsh_client'):
+        g.lcsh_client = LCSHClient()
+    return g.lcsh_client
 
 app.get_oxford_client = get_oxford_client
 
@@ -50,11 +59,16 @@ def home():
 @app.route("/", methods=["POST"])
 def fetch_word():
     '''Action for the index page form (in absence of JS). Also contains form.'''
-    client = get_oxford_client()
+    oxford = get_oxford_client()
+    lcsh = get_lcsh_client()
     word = request.form['word']
+
+    data = oxford(word)
+    lcsh_data = lcsh(word)
     return render_template('fetch.html',
                            word=word,
-                           data=client(word).result().json()['results'][0]['lexicalEntries'],
+                           data=data.result() or [],
+                           lcsh_data=lcsh_data.result() or {},
                            word_form=WordForm())
 
 

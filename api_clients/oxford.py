@@ -1,21 +1,4 @@
-import attr
-from attr import Factory
-from requests_futures.sessions import FuturesSession
-from flask import current_app
-
-def FSFactory():
-    s = FuturesSession(max_workers=2)
-    s.headers.update(current_app.config['OXFORD_API_INFO'])
-    return s
-
-@attr.s(slots=True)
-class result:
-    future = attr.ib()
-
-    def result(self):
-        sub_future = self.future.result().callback_future
-        if sub_future:
-            return sub_future.result()
+from .common import *
 
 @attr.s(slots=True)
 class OxfordClient:
@@ -35,14 +18,25 @@ class OxfordClient:
 
     def def_request_hook(self, sesh, resp, *args, **kwargs):
         '''Callback that queues request for word data for first search result, storing it in data property of response'''
+        def failure():
+            return False
+        
         if resp.status_code == 200:
             try:
-                resp.callback_future = self.definition_request(resp.json()['results'][0]['id'])
+                resp.callback_result = self.definition_request(resp.json()['results'][0]['id'])
             except (IndexError, KeyError):
-                resp.callback_future = False
+                resp.callback_result = self.session.executor.submit(failure)
 
     def __call__(self, word:str):
         '''Convenience method to search for a word and return the first search result'''
         final_result = self.search_request(word, background_callback = self.def_request_hook)
 
-        return result(final_result)
+        def output():
+            res = final_result.result()
+            
+            try:
+                return res.callback_result.result().json()['results'][0]['lexicalEntries']
+            except:
+                return False
+            
+        return self.session.executor.submit(output)
