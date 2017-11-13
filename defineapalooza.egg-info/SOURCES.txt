@@ -1,4 +1,5 @@
 MANIFEST.in
+api/templates/api/lex_entry_fragment.html
 defineapalooza/__init__.py
 defineapalooza/defineapalooza.py
 defineapalooza.egg-info/PKG-INFO
@@ -6,6 +7,8 @@ defineapalooza.egg-info/SOURCES.txt
 defineapalooza.egg-info/dependency_links.txt
 defineapalooza.egg-info/requires.txt
 defineapalooza.egg-info/top_level.txt
+defineapalooza/static/js/ajax_submit.js
+defineapalooza/templates/definition_macros.html
+defineapalooza/templates/fetch.html
 defineapalooza/templates/index.html
 defineapalooza/templates/layout.html
-defineapalooza/templates/layout.html~

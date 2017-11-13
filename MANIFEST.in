@@ -1,2 +1,3 @@
 graft defineapalooza/templates
 graft defineapalooza/static
+graft api/templates
