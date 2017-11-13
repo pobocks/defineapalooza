@@ -1,4 +1,2 @@
 {% import "definition_macros.html" as dm %}
-{% for lexical_entry in entries %}
-  {{dm.lexical_entry(lexical_entry)}}
-{% endfor %}
+{{ dm.page_contents(data, lcsh_data) }}

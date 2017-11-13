@@ -1,3 +1,10 @@
+{% macro page_contents(data, lcsh_data) %}
+{% for le in data %}
+  {{lexical_entry(le)}}
+{% endfor %}
+{{lcsh_subjects(lcsh_data)}}
+{% endmacro %}
+
 {% macro lexical_entry(lex_entry) %}
 <div class="lexical-entry lexical-entry-{{lex_entry['lexicalCategory']|lower}} panel panel-default">
   <header class="panel-heading">

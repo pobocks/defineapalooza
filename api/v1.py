@@ -7,7 +7,7 @@ api = Blueprint('api_v1', __name__, template_folder='templates')
 
 @api.route('/', methods=['GET'])
 def index():
-    '''Return list of routes and endpoints'''
+    '''Return list of routes and endpoints.'''
     return json.dumps([(str(rule.methods), rule.rule, rule.endpoint,)
                        for rule
                        in flask.current_app.url_map.iter_rules()
@@ -16,13 +16,16 @@ def index():
 
 @api.route('/word/<word>', methods=['GET'])
 def word(word):
-    '''Return either JSON or HTML representation of a definition'''
+    '''Return either JSON or HTML representation of definitions and LCSH search results for a word.'''
     if not word:
         abort(404)
     else:
-        c = flask.current_app.get_oxford_client()
-        res = c(word.lower()).result()
+        oxford = flask.current_app.get_oxford_client()
+        lcsh = flask.current_app.get_lcsh_client()
+        oxford_fut, lcsh_fut = (oxford(word.lower()), lcsh(word.lower()),)
+        
         if "application/json" in request.accept_mimetypes:
-            return Response(res.content, mimetype="application/json")
+            return jsonify({"oxford": oxford_fut.result(),
+                            "lcsh": lcsh_fut.result()})
         else:
-            return Response(render_template('api/lex_entry_fragment.html', entries=res.json()['results'][0]['lexicalEntries']), mimetype='text/html')
+            return Response(render_template('api/lex_entry_fragment.html', data=oxford_fut.result(), lcsh_data=lcsh_fut.result(), mimetype='text/html'))

@@ -4,14 +4,6 @@
 Results for: {{word}}
 {% endblock title %}
 
-{% block content %}
-{{super()}}
-<div class="row">
-<div class="col-md-12" style="margin-top: 1em;">
-  {% for le in data %}
-    {{dm.lexical_entry(le)}}
-  {% endfor %}
-  {{dm.lcsh_subjects(lcsh_data)}}
-</div>
-</div>
-{% endblock content %}
+{% block result %}
+{{ dm.page_contents(data, lcsh_data) }}
+{% endblock result %}

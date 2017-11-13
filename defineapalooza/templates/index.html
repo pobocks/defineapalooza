@@ -8,7 +8,7 @@ Defineapalooza
 <div class="row">
   <div class="col-md-2 col-md-offset-4"><h1>Defineapalooza!</h1></div>
   <div class="col-md-8 col-md-offset-2">
-    <form class="form-basic" method="POST">
+    <form id="word-form" class="form-basic" method="POST">
       {{ word_form.hidden_tag() }}
       {{ wtf.form_errors(word_form) }}
       <div class="input-group">
@@ -17,5 +17,15 @@ Defineapalooza
 	  <button type="submit" name="submit" id="submit" class="btn btn-primary">Submit&nbsp;&nbsp;<span class="glyphicon glyphicon-book"></span></button>
 	</span>
       </div>
+    </form>
+  </div>
+</div>
+
+<div class="row">
+  <div id="definition-content" class="col-md-12" style="margin-top: 1em;">
+{% block result %}
+    <p>Results will appear here.</p>
+{% endblock result %}
+  </div>
 </div>
 {% endblock content %}

@@ -42,6 +42,7 @@ def get_lcsh_client():
     return g.lcsh_client
 
 app.get_oxford_client = get_oxford_client
+app.get_lcsh_client = get_lcsh_client
 
 # Form
 class WordForm(Form):

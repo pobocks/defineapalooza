@@ -17,4 +17,7 @@
   </div>
 {% endblock body %}
 
-
+{% block scripts %}
+  {{super()}}
+  <script src="{{url_for('static', filename='js/ajax_submit.js')}}"></script>
+{% endblock scripts %}
