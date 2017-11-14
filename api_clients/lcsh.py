@@ -1,6 +1,10 @@
 from .common import *
 from lxml.etree import iterparse
 
+def FSFactory():
+    s = FuturesSession(max_workers=4)
+    return s
+
 SUBJECT_Q = "cs:http://id.loc.gov/authorities/subjects"
 XHTML_NS = "{http://www.w3.org/1999/xhtml}"
 

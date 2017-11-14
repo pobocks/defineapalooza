@@ -1,0 +1,745 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.17.3]
+      app_id: [3c2afa0f]
+      app_key: [15ecd0fa9dbdc536326c09065012f76a]
+    method: GET
+    uri: https://od-api.oxforddictionaries.com/api/v1/search/en?q=test
+  response:
+    body: {string: "{\n    \"results\": [\n        {\n            \"matchString\":
+        \"test\",\n            \"word\": \"test\",\n            \"matchType\": \"inflection\",\n
+        \           \"inflection_id\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"us\",\n            \"id\": \"test.\",\n            \"word\": \"test.\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"a-test\",\n
+        \           \"word\": \"A-test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"theory_test\",\n            \"word\": \"theory
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"test_tube\",\n            \"word\": \"test tube\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"test_strip\",\n
+        \           \"word\": \"test strip\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"test_series\",\n            \"word\": \"Test
+        series\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"test_rig\",\n            \"word\": \"test rig\"\n        },\n
+        \       {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"test_pit\",\n
+        \           \"word\": \"test pit\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"test_pilot\",\n            \"word\": \"test
+        pilot\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"test_piece\",\n            \"word\": \"test piece\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"us\",\n            \"id\": \"test_pattern\",\n
+        \           \"word\": \"test pattern\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"test_paper\",\n            \"word\": \"test
+        paper\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"test_meal\",\n            \"word\": \"test meal\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"test_match\",\n
+        \           \"word\": \"Test match\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"test-fly\",\n            \"word\": \"test-fly\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"test_flight\",\n
+        \           \"word\": \"test flight\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"test_drive\",\n            \"word\": \"test
+        drive\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"test_case\",\n            \"word\": \"test case\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"test_card\",\n
+        \           \"word\": \"test card\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"test_bed\",\n            \"word\": \"test bed\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"test_act\",\n
+        \           \"word\": \"Test Act\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"workhouse_test\",\n            \"word\": \"workhouse
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"wilcoxon_test\",\n            \"word\": \"Wilcoxon test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"phosphatase_test\",\n
+        \           \"word\": \"phosphatase test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"performance_test\",\n            \"word\":
+        \"performance test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"perc_test\",\n            \"word\": \"perc test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"percolation_test\",\n
+        \           \"word\": \"percolation test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"psychometric_test\",\n            \"word\":
+        \"psychometric test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"provocation_test\",\n            \"word\": \"provocation
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"post-test\",\n            \"word\": \"post-test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"projective_test\",\n
+        \           \"word\": \"projective test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"projection_test\",\n            \"word\": \"projection
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"progeny-test\",\n            \"word\": \"progeny-test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"progeny_test\",\n
+        \           \"word\": \"progeny test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"production-test\",\n            \"word\": \"production-test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"prick_test\",\n
+        \           \"word\": \"prick test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"pressure-test\",\n            \"word\": \"pressure-test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"pressure_test\",\n
+        \           \"word\": \"pressure test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"pregnancy_test\",\n            \"word\": \"pregnancy
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"precipitin_test\",\n            \"word\": \"precipitin
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"paraffin_test\",\n            \"word\": \"paraffin test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"pap_test\",\n
+        \           \"word\": \"Pap test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"reality-test\",\n            \"word\": \"reality-test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"reality_test\",\n
+        \           \"word\": \"reality test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"rabbit_test\",\n            \"word\": \"rabbit
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"quinine_test\",\n            \"word\": \"quinine test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"stress_test\",\n
+        \           \"word\": \"stress test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"static-test\",\n            \"word\": \"static-test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"static_test\",\n
+        \           \"word\": \"static test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"spot-test\",\n            \"word\": \"spot-test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"spot_test\",\n
+        \           \"word\": \"spot test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"snellen_test\",\n            \"word\": \"Snellen
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"smear_test\",\n            \"word\": \"smear test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"skin_test\",\n
+        \           \"word\": \"skin test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"sign_test\",\n            \"word\": \"sign
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"significance_test\",\n            \"word\": \"significance
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"screen_test\",\n            \"word\": \"screen test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"us\",\n            \"id\": \"scratch_test\",\n
+        \           \"word\": \"scratch test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"scoville_test\",\n            \"word\": \"Scoville
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"schick_test\",\n            \"word\": \"Schick test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"turing_test\",\n
+        \           \"word\": \"Turing test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"tuberculin_test\",\n            \"word\": \"tuberculin
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"trade-test\",\n            \"word\": \"trade-test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"trade_test\",\n
+        \           \"word\": \"trade test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"wassermann_test\",\n            \"word\": \"Wassermann
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"walk_test\",\n            \"word\": \"walk test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"voice_test\",\n
+        \           \"word\": \"voice test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"reductase_test\",\n            \"word\": \"reductase
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"rorschach_test\",\n            \"word\": \"Rorschach
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"romberg_test\",\n            \"word\": \"Romberg test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"road_test\",\n
+        \           \"word\": \"road test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"marsh_test\",\n            \"word\": \"Marsh
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"market_test\",\n            \"word\": \"market test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"mantoux_test\",\n
+        \           \"word\": \"Mantoux test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"laboratory_test\",\n            \"word\": \"laboratory
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"litmus_test\",\n            \"word\": \"litmus test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"literacy_test\",\n
+        \           \"word\": \"literacy test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"life-test\",\n            \"word\": \"life-test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"life_test\",\n
+        \           \"word\": \"life test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"izod_test\",\n            \"word\": \"Izod
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"ishihara_test\",\n            \"word\": \"Ishihara test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"us\",\n            \"id\": \"intelligence_test\",\n
+        \           \"word\": \"intelligence test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"inkblot_test\",\n            \"word\": \"inkblot
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"mental_test\",\n            \"word\": \"mental test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"means_test\",\n
+        \           \"word\": \"means test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"millon%27s_test\",\n            \"word\": \"Millon's
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"murexide_test\",\n            \"word\": \"murexide test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"movie_test\",\n
+        \           \"word\": \"movie test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"indentation_test\",\n            \"word\":
+        \"indentation test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"paternity_test\",\n            \"word\": \"paternity
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"patch_test\",\n            \"word\": \"patch test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"oil_test\",\n
+        \           \"word\": \"oil test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"obedience_test\",\n            \"word\": \"obedience
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"nuclear_test\",\n            \"word\": \"nuclear test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"flight_test\",\n
+        \           \"word\": \"flight test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"fitness_test\",\n            \"word\": \"fitness
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"field_test\",\n            \"word\": \"field test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"effects_test\",\n
+        \           \"word\": \"effects test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"drug_test\",\n            \"word\": \"drug
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"drugs_test\",\n            \"word\": \"drugs test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"drop_test\",\n
+        \           \"word\": \"drop test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"driving_test\",\n            \"word\": \"driving
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"driver%27s_test\",\n            \"word\": \"driver's
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"draize_test\",\n            \"word\": \"Draize test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"eye_test\",\n
+        \           \"word\": \"eye test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"nessler_test\",\n            \"word\": \"Nessler
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"needs-test\",\n            \"word\": \"needs-test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"guthrie_test\",\n
+        \           \"word\": \"Guthrie test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"high-test\",\n            \"word\": \"high-test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"cricket_test\",\n
+        \           \"word\": \"cricket test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"crash-test\",\n            \"word\": \"crash-test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"consumption_test\",\n
+        \           \"word\": \"consumption test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"cloze_test\",\n            \"word\": \"cloze
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"carbylamine_test\",\n            \"word\": \"carbylamine
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"breath_test\",\n            \"word\": \"breath test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"blood_test\",\n
+        \           \"word\": \"blood test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"beta_test\",\n            \"word\": \"beta
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"bench_test\",\n            \"word\": \"bench test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"benchmark_test\",\n
+        \           \"word\": \"benchmark test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"bechdel_test\",\n            \"word\": \"Bechdel
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"aptitude_test\",\n            \"word\": \"aptitude test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"ames_test\",\n
+        \           \"word\": \"Ames test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"alpha_test\",\n            \"word\": \"alpha
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"affluence_test\",\n            \"word\": \"affluence
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"acid_test\",\n            \"word\": \"acid test\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"test_the_water\",\n
+        \           \"word\": \"test the water\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"testing\",\n            \"word\": \"testing\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"testes\",\n
+        \           \"word\": \"testes\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"testable\",\n            \"word\": \"testable\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"testability\",\n
+        \           \"word\": \"testability\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"thematic_apperception_test\",\n            \"word\":
+        \"Thematic Apperception Test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"test-tube_baby\",\n            \"word\": \"test-tube
+        baby\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"test_ban_treaty\",\n            \"word\": \"Test Ban
+        Treaty\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"teach_to_the_test\",\n            \"word\": \"teach
+        to the test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"student%27s_t-test\",\n            \"word\": \"Student's
+        t-test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"us\",\n
+        \           \"id\": \"stanford-binet_test\",\n            \"word\": \"Stanford-Binet
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"signed-rank_test\",\n            \"word\": \"signed-rank
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"us\",\n
+        \           \"id\": \"true-false_test\",\n            \"word\": \"true-false
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"rideal%E2%80%93walker_test\",\n            \"word\":
+        \"Rideal\u2013Walker test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"paul%E2%80%93bunnell_test\",\n            \"word\":
+        \"Paul\u2013Bunnell test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"notched-bar_test\",\n            \"word\":
+        \"notched-bar test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"notch_bar_test\",\n            \"word\": \"notch bar
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"newman%E2%80%93keuls_test\",\n            \"word\":
+        \"Newman\u2013Keuls test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"hot-iron_test\",\n            \"word\": \"hot-iron
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"complement_fixation_test\",\n            \"word\": \"complement
+        fixation test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"chi-square_test\",\n            \"word\": \"chi-square
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"us\",\n
+        \           \"id\": \"brinell_hardness_test\",\n            \"word\": \"Brinell
+        hardness test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"binet%E2%80%93simon_test\",\n            \"word\": \"Binet\u2013Simon
+        test\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"acid_test_ratio\",\n            \"word\": \"acid test
+        ratio\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"stand_the_test_of_time\",\n            \"word\": \"stand
+        the test of time\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"put_someone%2Fsomething_to_the_test\",\n            \"word\":
+        \"put someone/something to the test\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"this_is_not_a_drill_%28or_test%29\",\n            \"word\":
+        \"this is not a drill (or test)\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"time-tested\",\n            \"word\": \"time-tested\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"testing_ground\",\n
+        \           \"word\": \"testing ground\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"performance_testing\",\n            \"word\":
+        \"performance testing\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"performance_tested\",\n            \"word\":
+        \"performance tested\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"psychometric_testing\",\n            \"word\":
+        \"psychometric testing\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"post-testing\",\n            \"word\": \"post-testing\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"production_testing\",\n
+        \           \"word\": \"production testing\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"production-tested\",\n            \"word\":
+        \"production-tested\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"reality_testing\",\n            \"word\": \"reality
+        testing\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"reality-tested\",\n            \"word\": \"reality-tested\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"spot_testing\",\n
+        \           \"word\": \"spot testing\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"significance_testing\",\n            \"word\":
+        \"significance testing\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"tuberculin-tested\",\n            \"word\":
+        \"tuberculin-tested\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"market_testing\",\n            \"word\": \"market testing\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"market-tested\",\n
+        \           \"word\": \"market-tested\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"life_testing\",\n            \"word\": \"life
+        testing\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"intelligence_testing\",\n            \"word\": \"intelligence
+        testing\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"mental_testing\",\n            \"word\": \"mental testing\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"means_testable\",\n
+        \           \"word\": \"means testable\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"hypothesis_testing\",\n            \"word\":
+        \"hypothesis testing\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"paternity_testing\",\n            \"word\":
+        \"paternity testing\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"patch_testing\",\n            \"word\": \"patch testing\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"patch-tested\",\n
+        \           \"word\": \"patch-tested\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"nuclear_testing\",\n            \"word\": \"nuclear
+        testing\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"genetic_testing\",\n            \"word\": \"genetic
+        testing\"\n        },\n        {\n            \"matchType\": \"headword\",\n
+        \           \"matchString\": \"test\",\n            \"region\": \"gb\",\n
+        \           \"id\": \"drug_testing\",\n            \"word\": \"drug testing\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"drugs_testing\",\n
+        \           \"word\": \"drugs testing\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"drop-testing\",\n            \"word\": \"drop-testing\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"blood_testing\",\n
+        \           \"word\": \"blood testing\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"blood-tested\",\n            \"word\": \"blood-tested\"\n
+        \       },\n        {\n            \"matchType\": \"headword\",\n            \"matchString\":
+        \"test\",\n            \"region\": \"gb\",\n            \"id\": \"affluence_testing\",\n
+        \           \"word\": \"affluence testing\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"magnetic_particle_testing\",\n            \"word\":
+        \"magnetic particle testing\"\n        },\n        {\n            \"matchType\":
+        \"headword\",\n            \"matchString\": \"test\",\n            \"region\":
+        \"gb\",\n            \"id\": \"tried_and_tested_%28or_tried_and_trusted%29\",\n
+        \           \"word\": \"tried and tested (or tried and trusted)\"\n        }\n
+        \   ],\n    \"metadata\": {\n        \"total\": 186,\n        \"provider\":
+        \"Oxford University Press\",\n        \"sourceLanguage\": \"en\",\n        \"offset\":
+        0,\n        \"limit\": 5000\n    }\n}"}
+    headers:
+      Connection: [keep-alive]
+      Content-Length: ['35977']
+      Content-Type: [application/json;charset=utf-8]
+      Date: ['Tue, 14 Nov 2017 03:17:08 GMT']
+      Server: [openresty/1.9.7.4]
+      version: [v3.6.1-19-g626045a]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.17.3]
+      app_id: [3c2afa0f]
+      app_key: [15ecd0fa9dbdc536326c09065012f76a]
+    method: GET
+    uri: https://od-api.oxforddictionaries.com/api/v1/entries/en/test
+  response:
+    body: {string: "{\n    \"metadata\": {\n        \"provider\": \"Oxford University
+        Press\"\n    },\n    \"results\": [\n        {\n            \"id\": \"test\",\n
+        \           \"language\": \"en\",\n            \"lexicalEntries\": [\n                {\n
+        \                   \"entries\": [\n                        {\n                            \"etymologies\":
+        [\n                                \"late Middle English (denoting a cupel
+        used to treat gold or silver alloys or ore): via Old French from Latin testu,
+        testum \u2018earthen pot\u2019, variant of testa \u2018jug, shell\u2019. Compare
+        with test. The verb dates from the early 17th century\"\n                            ],\n
+        \                           \"grammaticalFeatures\": [\n                                {\n
+        \                                   \"text\": \"Singular\",\n                                    \"type\":
+        \"Number\"\n                                }\n                            ],\n
+        \                           \"homographNumber\": \"100\",\n                            \"senses\":
+        [\n                                {\n                                    \"definitions\":
+        [\n                                        \"a procedure intended to establish
+        the quality, performance, or reliability of something, especially before it
+        is taken into widespread use\"\n                                    ],\n                                    \"examples\":
+        [\n                                        {\n                                            \"text\":
+        \"both countries carried out nuclear tests in May\"\n                                        },\n
+        \                                       {\n                                            \"text\":
+        \"four fax modems are on test\"\n                                        }\n
+        \                                   ],\n                                    \"id\":
+        \"m_en_gbus1042280.006\",\n                                    \"subsenses\":
+        [\n                                        {\n                                            \"definitions\":
+        [\n                                                \"a short written or spoken
+        examination of a person's proficiency or knowledge\"\n                                            ],\n
+        \                                           \"examples\": [\n                                                {\n
+        \                                                   \"text\": \"a spelling
+        test\"\n                                                }\n                                            ],\n
+        \                                           \"id\": \"m_en_gbus1042280.009\"\n
+        \                                       },\n                                        {\n
+        \                                           \"definitions\": [\n                                                \"an
+        event or situation that reveals the strength or quality of someone or something
+        by putting them under strain\"\n                                            ],\n
+        \                                           \"examples\": [\n                                                {\n
+        \                                                   \"text\": \"this is the
+        first serious test of the peace agreement\"\n                                                }\n
+        \                                           ],\n                                            \"id\":
+        \"m_en_gbus1042280.010\"\n                                        },\n                                        {\n
+        \                                           \"definitions\": [\n                                                \"an
+        examination of part of the body or a body fluid for medical purposes, especially
+        by means of a chemical or mechanical procedure rather than simple inspection\"\n
+        \                                           ],\n                                            \"domains\":
+        [\n                                                \"Medicine\"\n                                            ],\n
+        \                                           \"examples\": [\n                                                {\n
+        \                                                   \"text\": \"eye tests\"\n
+        \                                               },\n                                                {\n
+        \                                                   \"text\": \"researchers
+        developed a test for the virus\"\n                                                }\n
+        \                                           ],\n                                            \"id\":
+        \"m_en_gbus1042280.011\"\n                                        },\n                                        {\n
+        \                                           \"definitions\": [\n                                                \"a
+        procedure employed to identify a substance or to reveal the presence or absence
+        of a constituent within a substance.\"\n                                            ],\n
+        \                                           \"domains\": [\n                                                \"Chemistry\"\n
+        \                                           ],\n                                            \"id\":
+        \"m_en_gbus1042280.012\"\n                                        },\n                                        {\n
+        \                                           \"definitions\": [\n                                                \"the
+        result of a medical examination or analytical procedure\"\n                                            ],\n
+        \                                           \"domains\": [\n                                                \"Medicine\"\n
+        \                                           ],\n                                            \"examples\":
+        [\n                                                {\n                                                    \"text\":
+        \"a positive test for protein\"\n                                                }\n
+        \                                           ],\n                                            \"id\":
+        \"m_en_gbus1042280.013\"\n                                        },\n                                        {\n
+        \                                           \"definitions\": [\n                                                \"a
+        means of establishing whether an action, item, or situation is an instance
+        of a specified quality, especially one held to be undesirable\"\n                                            ],\n
+        \                                           \"examples\": [\n                                                {\n
+        \                                                   \"text\": \"a statutory
+        test of obscenity\"\n                                                }\n                                            ],\n
+        \                                           \"id\": \"m_en_gbus1042280.014\"\n
+        \                                       }\n                                    ]\n
+        \                               },\n                                {\n                                    \"crossReferenceMarkers\":
+        [\n                                        \"short for Test match\"\n                                    ],\n
+        \                                   \"crossReferences\": [\n                                        {\n
+        \                                           \"id\": \"test_match\",\n                                            \"text\":
+        \"Test match\",\n                                            \"type\": \"abbreviation\"\n
+        \                                       }\n                                    ],\n
+        \                                   \"examples\": [\n                                        {\n
+        \                                           \"text\": \"the first Test against
+        New Zealand\"\n                                        }\n                                    ],\n
+        \                                   \"id\": \"m_en_gbus1042280.016\",\n                                    \"variantForms\":
+        [\n                                        {\n                                            \"text\":
+        \"Test\"\n                                        }\n                                    ]\n
+        \                               },\n                                {\n                                    \"definitions\":
+        [\n                                        \"a movable hearth in a reverberating
+        furnace, used for separating gold or silver from lead.\"\n                                    ],\n
+        \                                   \"domains\": [\n                                        \"Metallurgy\"\n
+        \                                   ],\n                                    \"id\":
+        \"m_en_gbus1042280.021\"\n                                }\n                            ]\n
+        \                       },\n                        {\n                            \"etymologies\":
+        [\n                                \"mid 19th century: from Latin testa \u2018tile,
+        jug, shell\u2019. Compare with test\"\n                            ],\n                            \"grammaticalFeatures\":
+        [\n                                {\n                                    \"text\":
+        \"Singular\",\n                                    \"type\": \"Number\"\n
+        \                               }\n                            ],\n                            \"homographNumber\":
+        \"300\",\n                            \"senses\": [\n                                {\n
+        \                                   \"definitions\": [\n                                        \"the
+        shell or integument of some invertebrates and protozoans, especially the chalky
+        shell of a foraminiferan or the tough outer layer of a tunicate.\"\n                                    ],\n
+        \                                   \"domains\": [\n                                        \"Zoology\"\n
+        \                                   ],\n                                    \"id\":
+        \"m_en_gbus1042290.005\"\n                                }\n                            ]\n
+        \                       }\n                    ],\n                    \"language\":
+        \"en\",\n                    \"lexicalCategory\": \"Noun\",\n                    \"pronunciations\":
+        [\n                        {\n                            \"audioFile\": \"http://audio.oxforddictionaries.com/en/mp3/test_gb_1.mp3\",\n
+        \                           \"dialects\": [\n                                \"British
+        English\"\n                            ],\n                            \"phoneticNotation\":
+        \"IPA\",\n                            \"phoneticSpelling\": \"t\u025Bst\"\n
+        \                       }\n                    ],\n                    \"text\":
+        \"test\"\n                },\n                {\n                    \"entries\":
+        [\n                        {\n                            \"grammaticalFeatures\":
+        [\n                                {\n                                    \"text\":
+        \"Transitive\",\n                                    \"type\": \"Subcategorization\"\n
+        \                               },\n                                {\n                                    \"text\":
+        \"Present\",\n                                    \"type\": \"Tense\"\n                                }\n
+        \                           ],\n                            \"homographNumber\":
+        \"101\",\n                            \"senses\": [\n                                {\n
+        \                                   \"definitions\": [\n                                        \"take
+        measures to check the quality, performance, or reliability of (something),
+        especially before putting it into widespread use or practice\"\n                                    ],\n
+        \                                   \"domains\": [\n                                        \"Metallurgy\"\n
+        \                                   ],\n                                    \"examples\":
+        [\n                                        {\n                                            \"text\":
+        \"several trial runs were carried out to test the special brakes\"\n                                        },\n
+        \                                       {\n                                            \"text\":
+        \"this range has not been tested on animals\"\n                                        }\n
+        \                                   ],\n                                    \"id\":
+        \"m_en_gbus1042280.023\",\n                                    \"subsenses\":
+        [\n                                        {\n                                            \"definitions\":
+        [\n                                                \"give (someone) a short
+        written or oral examination of their proficiency or knowledge\"\n                                            ],\n
+        \                                           \"examples\": [\n                                                {\n
+        \                                                   \"text\": \"all children
+        are tested at eleven\"\n                                                }\n
+        \                                           ],\n                                            \"id\":
+        \"m_en_gbus1042280.029\"\n                                        },\n                                        {\n
+        \                                           \"definitions\": [\n                                                \"judge
+        or measure (someone's proficiency or knowledge) by means of a test\"\n                                            ],\n
+        \                                           \"examples\": [\n                                                {\n
+        \                                                   \"text\": \"the exam will
+        test accuracy and neatness\"\n                                                }\n
+        \                                           ],\n                                            \"id\":
+        \"m_en_gbus1042280.030\"\n                                        },\n                                        {\n
+        \                                           \"definitions\": [\n                                                \"reveal
+        the strengths or capabilities of (someone or something) by putting them under
+        strain\"\n                                            ],\n                                            \"examples\":
+        [\n                                                {\n                                                    \"text\":
+        \"such behaviour would severely test any marriage\"\n                                                }\n
+        \                                           ],\n                                            \"id\":
+        \"m_en_gbus1042280.031\"\n                                        },\n                                        {\n
+        \                                           \"definitions\": [\n                                                \"carry
+        out a medical test on (a person, a part of the body, or a body fluid)\"\n
+        \                                           ],\n                                            \"domains\":
+        [\n                                                \"Medicine\"\n                                            ],\n
+        \                                           \"examples\": [\n                                                {\n
+        \                                                   \"text\": \"he's been
+        tested for drugs\"\n                                                }\n                                            ],\n
+        \                                           \"id\": \"m_en_gbus1042280.032\"\n
+        \                                       },\n                                        {\n
+        \                                           \"definitions\": [\n                                                \"produce
+        a specified result in a medical test, especially a drugs test or AIDS test\"\n
+        \                                           ],\n                                            \"domains\":
+        [\n                                                \"Medicine\"\n                                            ],\n
+        \                                           \"examples\": [\n                                                {\n
+        \                                                   \"text\": \"he tested
+        positive for steroids during the race\"\n                                                }\n
+        \                                           ],\n                                            \"id\":
+        \"m_en_gbus1042280.033\",\n                                            \"notes\":
+        [\n                                                {\n                                                    \"text\":
+        \"no object, with complement\",\n                                                    \"type\":
+        \"grammaticalNote\"\n                                                }\n                                            ]\n
+        \                                       },\n                                        {\n
+        \                                           \"definitions\": [\n                                                \"examine
+        (a substance) by means of a reagent.\"\n                                            ],\n
+        \                                           \"domains\": [\n                                                \"Chemistry\"\n
+        \                                           ],\n                                            \"id\":
+        \"m_en_gbus1042280.034\"\n                                        },\n                                        {\n
+        \                                           \"definitions\": [\n                                                \"touch
+        or taste (something) to check that it is acceptable before proceeding further\"\n
+        \                                           ],\n                                            \"examples\":
+        [\n                                                {\n                                                    \"text\":
+        \"she tested the water with the tip of her elbow\"\n                                                }\n
+        \                                           ],\n                                            \"id\":
+        \"m_en_gbus1042280.035\"\n                                        }\n                                    ]\n
+        \                               }\n                            ]\n                        }\n
+        \                   ],\n                    \"language\": \"en\",\n                    \"lexicalCategory\":
+        \"Verb\",\n                    \"pronunciations\": [\n                        {\n
+        \                           \"audioFile\": \"http://audio.oxforddictionaries.com/en/mp3/test_gb_1.mp3\",\n
+        \                           \"dialects\": [\n                                \"British
+        English\"\n                            ],\n                            \"phoneticNotation\":
+        \"IPA\",\n                            \"phoneticSpelling\": \"t\u025Bst\"\n
+        \                       }\n                    ],\n                    \"text\":
+        \"test\"\n                }\n            ],\n            \"type\": \"headword\",\n
+        \           \"word\": \"test\"\n        }\n    ]\n}"}
+    headers:
+      Connection: [keep-alive]
+      Content-Length: ['18105']
+      Content-Type: [application/json;charset=utf-8]
+      Date: ['Tue, 14 Nov 2017 03:17:08 GMT']
+      Server: [openresty/1.9.7.4]
+      version: [v3.6.1-19-g626045a]
+    status: {code: 200, message: OK}
+version: 1

@@ -1,0 +1,624 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.17.3]
+    method: GET
+    uri: http://id.loc.gov/search/?q=test&q=cs%3Ahttp%3A%2F%2Fid.loc.gov%2Fauthorities%2Fsubjects
+  response:
+    body: {string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML+RDFa 1.0//EN\"\n            \"http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd\">\n<html
+        version=\"XHTML+RDFa 1.0\" xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:madsrdf=\"http://www.loc.gov/mads/rdf/v1#\"
+        xmlns:ri=\"http://id.loc.gov/ontologies/RecordInfo#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"
+        xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"
+        xmlns:skosxl=\"http://www.w3.org/2008/05/skos-xl#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\"
+        xmlns:cs=\"http://www.w3.org/2003/06/sw-vocab-status/ns#\" xmlns:dcterms=\"http://purl.org/dc/terms/\">\n
+        \ <head>\n    <title>Search Results - LC Linked Data Service: Authorities
+        and Vocabularies | Library of Congress</title>\n    <meta name=\"description\"
+        content=\" The Linked Data Service provides access to commonly found standards
+        and vocabularies promulgated by the Library of Congress. This includes data
+        values and the controlled vocabularies that house them.   Datasets available
+        include LCSH, BIBFRAME, LC Name Authorities, LC Classification, MARC codes,
+        PREMIS vocabularies, ISO language codes, and more.\"/>\n    <link rel=\"schema.DC\"
+        href=\"http://purl.org/dc/elements/1.1/\"/>\n    <link rel=\"dc.relation.isPartOf\"
+        href=\"//www.loc.gov/\" title=\"Library of Congress\"/>\n    <meta name=\"dc.title\"
+        content=\" LC Linked Data Service: Authorities and Vocabularies (Library of
+        Congress)\"/>\n    <meta name=\"dc.contributor\" content=\"The Library of
+        Congress\"/>\n    <meta name=\"dc.subject\" content=\"Library of Congress
+        Subject Headings\"/>\n    <meta name=\"dc.subject\" content=\"Subject Headings\"/>\n
+        \   <meta name=\"dc.subject\" content=\"Name Authorities\"/>\n    <meta name=\"dc.subject\"
+        content=\"Library of Congress Name Authorities\"/>\n    <meta name=\"dc.subject\"
+        content=\"LCSH\"/>\n    <meta name=\"dc.subject\" content=\"BIBFRAME\"/>\n
+        \   <meta name=\"dc.subject\" content=\"id.loc.gov\"/>\n    <meta name=\"dc.identifier\"
+        content=\"http://id.loc.gov/\"/>\n    <meta name=\"dc.type\" content=\"webpage\"/>\n
+        \   <meta name=\"dc.language\" content=\"eng\"/>\n    <link rel=\"shortcut
+        icon\" type=\"image/png\" href=\"/static/images/favicon.ico\"/>\n    <meta
+        http-equiv=\"content-type\" content=\"application/xhtml+xml; charset=utf-8\"/>\n
+        \   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/>\n
+        \   <link rel=\"search\" href=\"/opensearch/\" type=\"application/opensearchdescription+xml\"
+        title=\"Library of Congress Authorities and Vocabularies Search\"/>\n    <link
+        rel=\"apple-touch-icon\" href=\"//www.loc.gov/static/images/apple-touch-icon.png?35836.31053\"/>\n
+        \   <meta name=\"msapplication-config\" content=\"none\"/>\n    <link rel=\"alternate\"
+        href=\"http://id.loc.gov/search/?q=test cs:http://id.loc.gov/authorities/subjects&amp;start=1&amp;format=atom\"
+        type=\"application/atom+xml\" title=\"LC Linked Data Service Search in Atom/XML\"/>\n
+        \   <link rel=\"alternate\" href=\"http://id.loc.gov/search/?q=test cs:http://id.loc.gov/authorities/subjects&amp;start=1&amp;format=json\"
+        type=\"application/json\" title=\"LC Linked Data Service Search in Atom/JSONML\"/>\n
+        \   <meta name=\"keywords\" content=\"Search Results, LC Linked Data Service,
+        linked data, Library of Congress Subject Headings,                         subject
+        headings, lcsh, id.loc.gov, linked data,                         authorities,
+        standards, vocabularies\"/>\n    <meta name=\"keywords\" content=\"Search
+        Results - LC Linked Data Service: Authorities and Vocabularies | Library of
+        Congress , Library of Congress Subject Headings, Library of Congress Name
+        Authorities, subject headings, name authorities, lcsh, lcnaf, id.loc.gov,
+        \ linked data, authorities, standards, vocabularies\"/>\n    <!-- CSS -->\n
+        \   <link type=\"text/css\" media=\"screen\" rel=\"stylesheet\" href=\"/static/css/2012/styles.css\"/>\n
+        \   <link type=\"text/css\" media=\"print\" rel=\"stylesheet\" href=\"/static/css/2012/loc_print_v2.css\"/>\n
+        \   <!--[if lte IE 7]><link type=\"text/css\" media=\"screen\" rel=\"stylesheet\"
+        href=\"/static/css/2012/loc_lte_ie6.css\" /><![endif]-->\n    <!-- End CSS
+        -->\n    <!-- <script type=\"text/javascript\" src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js\"></script>
+        -->\n    <script type=\"text/javascript\" src=\"//cdn.loc.gov/js/lib/jquery-1.8.2.min.js\"></script>\n
+        \   <script type=\"text/javascript\" src=\"//ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js\"></script>\n
+        \   <script type=\"text/javascript\" src=\"/static/js/loc_expandcollapse.js\"></script>\n
+        \   <script type=\"text/javascript\" src=\"/static/js/jquery.validate.min.js\"></script>\n
+        \   <script type=\"text/javascript\" src=\"/static/js/jquery.form.js\"></script>\n
+        \   <script type=\"text/javascript\" src=\"/static/js/id.js\"></script>\n
+        \   <script type=\"text/javascript\" src=\"/static/js/swfobject.js\"></script>\n
+        \   <script type=\"text/javascript\">\n                    var uri = \"\";\n
+        \                   \n                    var graphgear_data = {\n                        xml:uri
+        + \".gg.xml\",\n                        header:''\n                    };\n
+        \                   \n                </script>\n    <script type=\"text/javascript\">\n
+        \                       // var uri = \"\";\n                    \n                        //
+        $(function() {\n                        //    $(\"#loctoggler\").accordion(
+        { autoHeight: false } );\n                        // });\n                        \n
+        \                       $(document).ready(function() {\n                            //Default
+        Action\n                            $(\".tab_content\").hide(); //Hide all
+        content\n                            $(\"ul.tabnav li:first\").addClass(\"active\").show();
+        //Activate first tab\n                            $(\".tab_content:first\").show();
+        //Show first tab content\n    \n                            //On Click Event\n
+        \                           $(\"ul.tabnav li\").click(function() {\n                                $(\"ul.tabnav
+        li\").removeClass(\"active\"); //Remove any \"active\" class\n                                $(this).addClass(\"active\");
+        //Add \"active\" class to selected tab\n                                $(\".tab_content\").hide();
+        //Hide all tab content\n                                var activeTab = $(this).find(\"a\").attr(\"href\");
+        //Find the rel attribute value to identify the active tab + content\n                                if
+        ($(this).find(\"a\").attr(\"href\") == \"#tab2\") {\n                                    $(activeTab).show();
+        //Just show the content\n                                    $(\"#protovisforced\").empty().html('&lt;center&gt;&lt;img
+        src=\"/static/images/loading.gif\" /&gt;&lt;/center&gt;');\n                                    \n
+        \                                   $(graphgear);\n                                    //$.ajaxSetup({async:
+        false});\n                                    //$.getScript( uri + \".pvforced.js\");\n
+        \                                   //$(protovis_forced);\n                                    //$.ajaxSetup({async:
+        true});\n                                } else {\n                                    $(activeTab).fadeIn();
+        //Fade in the active content\n                                }\n                                return
+        false;\n                            });\n                        });\n                        \n
+        \                       $(function() {\n                            //$(\"#loctoggler
+        h3.loctoggler_expand\").toggler({initShow: \"div.collapse:eq(0)\"});\n                            $(\"#loctoggler
+        h3.loctoggler_expand\").toggler();\n                            $(\"#loctoggler\").expandAll({\n
+        \                               trigger: \"h3.loctoggler_expand\",\n                                ref:
+        \"h3.loctoggler_expand\",\n                                showMethod: \"slideDown\",\n
+        \                               hideMethod: \"slideUp\",\n                                oneSwitch
+        : false\n                            });\n                        });\n                    \n
+        \               </script>\n  </head>\n  <body><a id=\"skip\" href=\"#skip_menu\">skip
+        navigation</a><div id=\"container\"><div id=\"branding\"><h2>Library of Congress</h2><h3>Authorities
+        &amp; Vocabularies</h3></div><div id=\"h-wrapper\" class=\"fix-float\"><div
+        id=\"header\" class=\"fix-float\"><div class=\"logo\"><a href=\"//www.loc.gov\"
+        accesskey=\"1\"><img src=\"/static/images/2012/img-head/logo-loc.png\" width=\"141\"
+        height=\"32\" alt=\"Library of Congress\"/></a></div><div class=\"nav\" style=\"box-sizing:
+        content-box;\"><ul>\n\t      <li><a class=\"btn-loc\" href=\"//www.loc.gov/rr/askalib/\"
+        accesskey=\"2\">Ask a Librarian</a></li>\n\t      <li><a class=\"btn-loc\"
+        href=\"//www.loc.gov/library/libarch-digital.html\" accesskey=\"3\">Digital
+        Collections</a></li>\n\t      <li><a class=\"btn-loc\" href=\"//catalog.loc.gov/\"
+        accesskey=\"4\">Library Catalogs</a></li>\n\t    </ul></div><div class=\"search\"><form
+        action=\"//www.loc.gov/search\" method=\"get\">\n\t      <label class=\"search_label\"
+        for=\"search\">Search</label>\n\t      <div class=\"search_wrap\"><input type=\"hidden\"
+        name=\"new\" value=\"true\"/><input id=\"search\" type=\"search\" name=\"q\"
+        maxlength=\"200\" accesskey=\"/\" title=\"Search the Library of Congress website\"
+        placeholder=\"Search Loc.gov\" class=\"locsuggest\"/><button class=\"button\"
+        id=\"search_button\" type=\"submit\">GO</button></div>\n\t    </form></div></div><script
+        src=\"//cdn.loc.gov/suggest/library-of-congress.js\" type=\"text/javascript\"><!--
+        space --></script></div><div id=\"crumb_nav\"><a href=\"//www.loc.gov\">The
+        Library of Congress</a><span> &gt; </span><a href=\"/\">Linked Data Service</a></div><!--
+        end id:topnav --><div id=\"content\"><div id=\"main_body_full\" class=\"w_742\"><div
+        id=\"page_head\"><span id=\"skip_menu\" style=\"width: 100%;\"><!-- --></span><h1
+        class=\"oneline\">Search Results</h1></div><div id=\"main_body_full\" title=\"Search
+        Results\"><div id=\"results\" data-atomlinkxml=\"http://id.loc.gov/search/?q=test
+        cs:http://id.loc.gov/authorities/subjects&amp;start=1&amp;format=atom\" data-atomlinkjson=\"http://id.loc.gov/search/?q=test
+        cs:http://id.loc.gov/authorities/subjects&amp;start=1&amp;format=json\"><p>\n
+        \                   Do you need <a href=\"/techcenter/searching.html\">assistance
+        with your search</a>?\n                </p><div class=\"idsearch\"><form accept-charset=\"utf-8\"
+        method=\"get\" name=\"search\" id=\"search_form\" action=\"/search/\">\n\t\t
+        \ <table><tr>\n\t\t      <td style=\"width: 50%\"><h2 class=\"dot-bot\">Search</h2><input
+        type=\"search\" id=\"Search_term1\" class=\"long-w\" name=\"q\" value=\"test\"
+        placeholder=\"Enter Keyword or Phrase\"/><br/><!-- <small>Hold CONTROL key
+        for 2 or more</small> --><br/><select name=\"q\" id=\"Search_cat1\" class=\"long-w\"
+        multiple=\"multiple\">\n\t\t\t  <option value=\"\">All</option>\n\t\t\t  <option
+        value=\"cs:http://id.loc.gov/authorities/subjects\" selected=\"true\">LC Subject
+        Headings</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/authorities/names\">LC
+        Name Authority File</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/authorities/classification\">LC
+        Classification</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/authorities/childrensSubjects\">LC
+        Children's Subject Headings</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/authorities/genreForms\">LC
+        Genre/Form Terms</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/authorities/performanceMediums\">LC
+        Medium of Performance Thesaurus for Music</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/authorities/demographicTerms\">LC
+        Demographic Group Terms</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/graphicMaterials\">Thesaurus
+        for Graphic Materials</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/ethnographicTerms\">AFS
+        Ethnographic Thesaurus</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/organizations\">Cultural
+        Heritage Organizations</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/relators\">MARC
+        Relators</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/countries\">MARC
+        Countries</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/geographicAreas\">MARC
+        Geographic Areas</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/languages\">MARC
+        Languages</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/marcgt\">MARC
+        Genre Terms</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/iso639-1\">ISO639-1
+        Languages</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/iso639-2\">ISO639-2
+        Languages</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/iso639-5\">ISO639-5
+        Languages</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/datatypes/edtf\">Extended
+        Date/Time Format</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/identifiers\">Identifiers</option>\n\t\t\t
+        \ <option value=\"cs:http://id.loc.gov/vocabulary/carriers\">Carriers</option>\n\t\t\t
+        \ <option value=\"cs:http://id.loc.gov/vocabulary/contentTypes\">Content Types</option>\n\t\t\t
+        \ <option value=\"cs:http://id.loc.gov/vocabulary/mediaTypes\">Media Types</option>\n\t\t\t
+        \ <option value=\"cs:http://id.loc.gov/vocabulary/resourceTypes\">Resource
+        Types</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/genreFormSchemes\">MARC
+        Genre/Form Schemes</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/subjectSchemes\">MARC
+        Subject Schemes</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/classSchemes\">Classification
+        Schemes</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/descriptionConventions\">Description
+        Convention</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/frequencies\">Publication
+        Frequencies</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/resourceComponents\">Resource
+        Components</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/ontologies/bibframe/\">BIBFRAME
+        Ontology</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation\">Preservation
+        Vocabs (all)</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/actionsGranted\">Actions
+        Granted</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/agentType\">Agent
+        Type</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/contentLocationType\">Content
+        Location Type</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/copyrightStatus\">Copyright
+        Status</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions\">Cryptographic
+        Hash Functions</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/environmentCharacteristic\">Environment
+        Characteristic</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/environmentFunctionType\">Environment
+        Function Type</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/environmentPurpose\">Environment
+        Purpose</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/environmentRegistryRole\">Environment
+        Registry Role</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/eventRelatedAgentRole\">Event
+        Related Agent Role</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/eventRelatedObjectRole\">Event
+        Related Object Role</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/eventType\">Event
+        Type</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/formatRegistryRole\">Format
+        Registry Role</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/hardwareType\">Hardware
+        Type</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/inhibitorTarget\">Inhibitor
+        Target</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/inhibitorType\">Inhibitor
+        Type</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/linkingAgentRoleEvent\">linking
+        Agent Role Event</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/linkingEnvironmentRole\">Linking
+        Environment Role</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/objectCategory\">Object
+        Category</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/preservationLevelRole\">Preservation
+        Level Role</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/relationshipSubType\">Relationship
+        SubType</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/relationshipType\">Relationship
+        Type</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/rightsBasis\">Rights
+        Basis</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/rightsRelatedAgentRole\">Rights
+        Related Agent Role</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/signatureEncoding\">Signature
+        Encoding</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/signatureMethod\">Signature
+        Method</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/softwareType\">Software
+        Type</option>\n\t\t\t  <option value=\"cs:http://id.loc.gov/vocabulary/preservation/storageMedium\">Storage
+        Medium</option>\n\t\t\t</select></td>\n\t\t      <td style=\"width: 5%\">
+        </td>\n\t\t      <td style=\"width: 45%\"><p class=\"right nomargin-bottom\"
+        style=\"text-align: justify;\"><br/>\n                            **Please
+        Note: LC Classification entries are not included in general search results.
+        \ You must explicitly select LC Classification in order \n                            to
+        search the scheme.  This is temporary while the impact of adding LCC to the
+        current system is better understood.\n                            <br/><br/><input
+        style=\"margin-right:-2px;\" type=\"submit\" id=\"Search_submit\" value=\"Search\"
+        class=\"submit\"/>\n                            \_\_\_\_\n                            <a
+        style=\"text-decoration: none;\" href=\"/search/\"><input style=\"margin-right:-2px;\"
+        type=\"button\" id=\"Search_reset\" value=\"Reset\" class=\"submit\"/></a></p></td>\n\t\t
+        \   </tr></table>\n\t\t</form></div><br/><div class=\"nav-pag-top\"><span
+        class=\"pagination\"><span><a class=\"prev off\" href=\"#\">Previous</a> </span><b>1</b><a
+        href=\"?q=test cs:http://id.loc.gov/authorities/subjects&amp;start=21\">2</a><a
+        href=\"?q=test cs:http://id.loc.gov/authorities/subjects&amp;start=41\">3</a><a
+        href=\"?q=test cs:http://id.loc.gov/authorities/subjects&amp;start=61\">4</a><a
+        href=\"?q=test cs:http://id.loc.gov/authorities/subjects&amp;start=81\">5</a><a
+        href=\"?q=test cs:http://id.loc.gov/authorities/subjects&amp;start=101\">6</a><a
+        href=\"?q=test cs:http://id.loc.gov/authorities/subjects&amp;start=121\">7</a><a
+        href=\"?q=test cs:http://id.loc.gov/authorities/subjects&amp;start=141\">8</a><a
+        href=\"?q=test cs:http://id.loc.gov/authorities/subjects&amp;start=161\">9</a><a
+        href=\"?q=test cs:http://id.loc.gov/authorities/subjects&amp;start=181\">10</a><a
+        href=\"?q=test cs:http://id.loc.gov/authorities/subjects&amp;start=201\">11</a><span>...</span><span>
+        \ <a class=\"next\" href=\"?q=test cs:http://id.loc.gov/authorities/subjects&amp;start=21\">Next</a></span></span></div><table
+        class=\"id-std\" style=\"width: 100%\" cellspacing=\"0\"><thead>\n\t\t  <tr>\n\t\t
+        \   <th scope=\"col\">\_</th>\n\t\t    <th scope=\"col\">Label</th>\n\t\t
+        \   <th scope=\"col\">Vocabulary</th>\n\t\t    <th scope=\"col\">Concept Type</th>\n\t\t
+        \   <th scope=\"col\">Subdivision Type</th>\n\t\t    <th scope=\"col\">Identifier</th>\n\t\t
+        \ </tr>\n\t\t</thead><tbody>\n\t\t  <tr>\n\t\t    <td>1.</td>\n\t\t    <td><a
+        href=\"/authorities/subjects/sh85090024\">National Merit Scholarship Qualifying
+        Test</a></td>\n\t\t    <td class=\"underline\">LC Subject Headings<br/></td>\n\t\t
+        \   <td class=\"underline\"><type class=\"Topic\">Topic</type></td>\n\t\t
+        \   <td class=\"underline\"></td>\n\t\t    <td class=\"underline\">sh85090024</td>\n\t\t
+        \ </tr>\n\t\t  <tr>\n\t\t    <td></td>\n\t\t    <td colspan=\"4\">Merit Scholarship
+        Qualifying Test ; NMSQT (National Merit Scholarship Qualifying Test) ; Scholarship
+        Qualifying Test</td>\n\t\t  </tr>\n\t\t  <tr class=\"alt\">\n\t\t    <td>2.</td>\n\t\t
+        \   <td><a href=\"/authorities/subjects/sh2010012958\">Stroop Color and Word
+        Test</a></td>\n\t\t    <td class=\"underline\">LC Subject Headings<br/></td>\n\t\t
+        \   <td class=\"underline\"><type class=\"Topic\">Topic</type></td>\n\t\t
+        \   <td class=\"underline\"></td>\n\t\t    <td class=\"underline\">sh2010012958</td>\n\t\t
+        \ </tr>\n\t\t  <tr>\n\t\t    <td></td>\n\t\t    <td colspan=\"4\">SCWT (Stroop
+        Color and Word Test) ; Stroop Color-Word Test ; Stroop Test</td>\n\t\t  </tr>\n\t\t
+        \ <tr>\n\t\t    <td>3.</td>\n\t\t    <td><a href=\"/authorities/subjects/sh87005816\">Test-taking
+        skills</a></td>\n\t\t    <td class=\"underline\">LC Subject Headings<br/></td>\n\t\t
+        \   <td class=\"underline\"><type class=\"Topic\">Topic</type></td>\n\t\t
+        \   <td class=\"underline\"></td>\n\t\t    <td class=\"underline\">sh87005816</td>\n\t\t
+        \ </tr>\n\t\t  <tr>\n\t\t    <td></td>\n\t\t    <td colspan=\"4\">Skills,
+        Test-taking ; Test-taking strategies ; Test wiseness</td>\n\t\t  </tr>\n\t\t
+        \ <tr class=\"alt\">\n\t\t    <td>4.</td>\n\t\t    <td><a href=\"/authorities/subjects/sh2010012960\">Serial
+        Sevens Test</a></td>\n\t\t    <td class=\"underline\">LC Subject Headings<br/></td>\n\t\t
+        \   <td class=\"underline\"><type class=\"Topic\">Topic</type></td>\n\t\t
+        \   <td class=\"underline\"></td>\n\t\t    <td class=\"underline\">sh2010012960</td>\n\t\t
+        \ </tr>\n\t\t  <tr>\n\t\t    <td></td>\n\t\t    <td colspan=\"4\">Serial 7s
+        Test ; Serial Seven Test ; Serial Sevens Subtraction Test ; SST (Serial Sevens
+        Test)</td>\n\t\t  </tr>\n\t\t  <tr>\n\t\t    <td>5.</td>\n\t\t    <td><a href=\"/authorities/subjects/sh85013109\">Bender-Gestalt
+        Test</a></td>\n\t\t    <td class=\"underline\">LC Subject Headings<br/></td>\n\t\t
+        \   <td class=\"underline\"><type class=\"Topic\">Topic</type></td>\n\t\t
+        \   <td class=\"underline\"></td>\n\t\t    <td class=\"underline\">sh85013109</td>\n\t\t
+        \ </tr>\n\t\t  <tr>\n\t\t    <td></td>\n\t\t    <td colspan=\"4\">Bender Test
+        ; Bender Visual Motor Gestalt Test ; Gestalt Test ; Visual Motor Gestalt Test</td>\n\t\t
+        \ </tr>\n\t\t  <tr class=\"alt\">\n\t\t    <td>6.</td>\n\t\t    <td><a href=\"/authorities/subjects/sh2002008672\">Rey-Osterrieth
+        Complex Figure Test</a></td>\n\t\t    <td class=\"underline\">LC Subject Headings<br/></td>\n\t\t
+        \   <td class=\"underline\"><type class=\"Topic\">Topic</type></td>\n\t\t
+        \   <td class=\"underline\"></td>\n\t\t    <td class=\"underline\">sh2002008672</td>\n\t\t
+        \ </tr>\n\t\t  <tr>\n\t\t    <td></td>\n\t\t    <td colspan=\"4\">CFT (Neuropsychological
+        test) ; Complex Figure Test ; Rey Complex Figure (Neuropsychological test)
+        ; Rey Complex Figure Test ; Rey Figure (Neuropsychological test) ; ROCF (Neuropsychological
+        test)</td>\n\t\t  </tr>\n\t\t  <tr>\n\t\t    <td>7.</td>\n\t\t    <td><a href=\"/authorities/subjects/sh85127326\">Stanford-Binet
+        Test</a></td>\n\t\t    <td class=\"underline\">LC Subject Headings<br/></td>\n\t\t
+        \   <td class=\"underline\"><type class=\"Topic\">Topic</type></td>\n\t\t
+        \   <td class=\"underline\"></td>\n\t\t    <td class=\"underline\">sh85127326</td>\n\t\t
+        \ </tr>\n\t\t  <tr>\n\t\t    <td></td>\n\t\t    <td colspan=\"4\">Binet-Stanford
+        Test ; Terman-Merrill Test</td>\n\t\t  </tr>\n\t\t  <tr class=\"alt\">\n\t\t
+        \   <td>8.</td>\n\t\t    <td><a href=\"/authorities/subjects/sh85058518\">Halstead-Reitan
+        Neuropsychological Test Battery</a></td>\n\t\t    <td class=\"underline\">LC
+        Subject Headings<br/></td>\n\t\t    <td class=\"underline\"><type class=\"Topic\">Topic</type></td>\n\t\t
+        \   <td class=\"underline\"></td>\n\t\t    <td class=\"underline\">sh85058518</td>\n\t\t
+        \ </tr>\n\t\t  <tr>\n\t\t    <td></td>\n\t\t    <td colspan=\"4\">Halstead
+        Battery (Neuropsychology) ; Halstead Neuropsychological Test Battery ; Halstead-Reitan
+        Battery (Neuropsychology) ; Halstead-Reitan Test Battery (Neuropsychology)</td>\n\t\t
+        \ </tr>\n\t\t  <tr>\n\t\t    <td>9.</td>\n\t\t    <td><a href=\"/authorities/subjects/sh85135839\">Token
+        Test</a></td>\n\t\t    <td class=\"underline\">LC Subject Headings<br/></td>\n\t\t
+        \   <td class=\"underline\"><type class=\"Topic\">Topic</type></td>\n\t\t
+        \   <td class=\"underline\"></td>\n\t\t    <td class=\"underline\">sh85135839</td>\n\t\t
+        \ </tr>\n\t\t  <tr>\n\t\t    <td></td>\n\t\t    <td colspan=\"4\">Revised
+        Token Test ; Token Aphasia Test</td>\n\t\t  </tr>\n\t\t  <tr class=\"alt\">\n\t\t
+        \   <td>10.</td>\n\t\t    <td><a href=\"/authorities/subjects/sh85119672\">Selected
+        Reserve Reenlistment Bonus Test</a></td>\n\t\t    <td class=\"underline\">LC
+        Subject Headings<br/></td>\n\t\t    <td class=\"underline\"><type class=\"Topic\">Topic</type></td>\n\t\t
+        \   <td class=\"underline\"></td>\n\t\t    <td class=\"underline\">sh85119672</td>\n\t\t
+        \ </tr>\n\t\t  <tr>\n\t\t    <td></td>\n\t\t    <td colspan=\"4\">Reenlistment
+        Bonus Test, Selected Reserve ; Reserve Reenlistment Bonus Test, Selected</td>\n\t\t
+        \ </tr>\n\t\t  <tr>\n\t\t    <td>11.</td>\n\t\t    <td><a href=\"/authorities/subjects/sh89005786\">Nevada
+        Test Site (Nev.)</a></td>\n\t\t    <td class=\"underline\">LC Subject Headings<br/></td>\n\t\t
+        \   <td class=\"underline\"><type class=\"Geographic\">Geographic</type></td>\n\t\t
+        \   <td class=\"underline\"></td>\n\t\t    <td class=\"underline\">sh89005786</td>\n\t\t
+        \ </tr>\n\t\t  <tr>\n\t\t    <td></td>\n\t\t    <td colspan=\"4\">AEC Nevada
+        Test Site (Nev.) ; Nellis Air Force Bombing and Gunnery Range (Nev.) ; Nevada
+        Atomic Test Site (Nev.) ; Nevada Nuclear Test Site (Nev.) ; Nevada Proving
+        Grounds (Nev.) ; NTS (Nevada Test Site) (Nev.)</td>\n\t\t  </tr>\n\t\t  <tr
+        class=\"alt\">\n\t\t    <td>12.</td>\n\t\t    <td><a href=\"/authorities/subjects/sh92001752\">High
+        School Proficiency Test</a></td>\n\t\t    <td class=\"underline\">LC Subject
+        Headings<br/></td>\n\t\t    <td class=\"underline\"><type class=\"Topic\">Topic</type></td>\n\t\t
+        \   <td class=\"underline\"></td>\n\t\t    <td class=\"underline\">sh92001752</td>\n\t\t
+        \ </tr>\n\t\t  <tr>\n\t\t    <td></td>\n\t\t    <td colspan=\"4\">HSPT (Achievement
+        test) ; New Jersey High School Proficiency Test (HSPT)</td>\n\t\t  </tr>\n\t\t
+        \ <tr>\n\t\t    <td>13.</td>\n\t\t    <td><a href=\"/authorities/subjects/sh92006215\">Test
+        of English as a Foreign Language</a></td>\n\t\t    <td class=\"underline\">LC
+        Subject Headings<br/></td>\n\t\t    <td class=\"underline\"><type class=\"Topic\">Topic</type></td>\n\t\t
+        \   <td class=\"underline\"></td>\n\t\t    <td class=\"underline\">sh92006215</td>\n\t\t
+        \ </tr>\n\t\t  <tr>\n\t\t    <td></td>\n\t\t    <td colspan=\"4\">TOEFL (Test
+        of English as a Foreign Language)</td>\n\t\t  </tr>\n\t\t  <tr class=\"alt\">\n\t\t
+        \   <td>14.</td>\n\t\t    <td><a href=\"/authorities/subjects/sh88001895\">Test
+        pilots</a></td>\n\t\t    <td class=\"underline\">LC Subject Headings<br/></td>\n\t\t
+        \   <td class=\"underline\"><type class=\"Topic\">Topic</type></td>\n\t\t
+        \   <td class=\"underline\"></td>\n\t\t    <td class=\"underline\">sh88001895</td>\n\t\t
+        \ </tr>\n\t\t  <tr>\n\t\t    <td></td>\n\t\t    <td colspan=\"4\">Pilots,
+        Test</td>\n\t\t  </tr>\n\t\t  <tr>\n\t\t    <td>15.</td>\n\t\t    <td><a href=\"/authorities/subjects/sh2005004735\">Test
+        of English for Teaching Purposes</a></td>\n\t\t    <td class=\"underline\">LC
+        Subject Headings<br/></td>\n\t\t    <td class=\"underline\"><type class=\"Topic\">Topic</type></td>\n\t\t
+        \   <td class=\"underline\"></td>\n\t\t    <td class=\"underline\">sh2005004735</td>\n\t\t
+        \ </tr>\n\t\t  <tr>\n\t\t    <td></td>\n\t\t    <td colspan=\"4\">TETP (Test
+        of English for Teaching Purposes)</td>\n\t\t  </tr>\n\t\t  <tr class=\"alt\">\n\t\t
+        \   <td>16.</td>\n\t\t    <td><a href=\"/authorities/subjects/sh85109170\">Purdue
+        Non-Language Adaptability Test</a></td>\n\t\t    <td class=\"underline\">LC
+        Subject Headings<br/></td>\n\t\t    <td class=\"underline\"><type class=\"Topic\">Topic</type></td>\n\t\t
+        \   <td class=\"underline\"></td>\n\t\t    <td class=\"underline\">sh85109170</td>\n\t\t
+        \ </tr>\n\t\t  <tr>\n\t\t    <td></td>\n\t\t    <td colspan=\"4\">Non-Language
+        Adaptability Test</td>\n\t\t  </tr>\n\t\t  <tr>\n\t\t    <td>17.</td>\n\t\t
+        \   <td><a href=\"/authorities/subjects/sh99005804\">Test of Early Written
+        Language</a></td>\n\t\t    <td class=\"underline\">LC Subject Headings<br/></td>\n\t\t
+        \   <td class=\"underline\"><type class=\"Topic\">Topic</type></td>\n\t\t
+        \   <td class=\"underline\"></td>\n\t\t    <td class=\"underline\">sh99005804</td>\n\t\t
+        \ </tr>\n\t\t  <tr>\n\t\t    <td></td>\n\t\t    <td colspan=\"4\">TEWL (Test
+        of Early Written Language)</td>\n\t\t  </tr>\n\t\t  <tr class=\"alt\">\n\t\t
+        \   <td>18.</td>\n\t\t    <td><a href=\"/authorities/subjects/sh85085393\">Miller-Yoder
+        Language Comprehension Test</a></td>\n\t\t    <td class=\"underline\">LC Subject
+        Headings<br/></td>\n\t\t    <td class=\"underline\"><type class=\"Topic\">Topic</type></td>\n\t\t
+        \   <td class=\"underline\"></td>\n\t\t    <td class=\"underline\">sh85085393</td>\n\t\t
+        \ </tr>\n\t\t  <tr>\n\t\t    <td></td>\n\t\t    <td colspan=\"4\">MY (Miller-Yoder
+        Language Comprehension Test)</td>\n\t\t  </tr>\n\t\t  <tr>\n\t\t    <td>19.</td>\n\t\t
+        \   <td><a href=\"/authorities/subjects/sh94003330\">Test of English for International
+        Communication</a></td>\n\t\t    <td class=\"underline\">LC Subject Headings<br/></td>\n\t\t
+        \   <td class=\"underline\"><type class=\"Topic\">Topic</type></td>\n\t\t
+        \   <td class=\"underline\"></td>\n\t\t    <td class=\"underline\">sh94003330</td>\n\t\t
+        \ </tr>\n\t\t  <tr>\n\t\t    <td></td>\n\t\t    <td colspan=\"4\">TOEIC (Test
+        of English for International Communication)</td>\n\t\t  </tr>\n\t\t  <tr class=\"alt\">\n\t\t
+        \   <td>20.</td>\n\t\t    <td><a href=\"/authorities/subjects/sh85127256\">Staggered
+        Spondaic Word Test</a></td>\n\t\t    <td class=\"underline\">LC Subject Headings<br/></td>\n\t\t
+        \   <td class=\"underline\"><type class=\"Topic\">Topic</type></td>\n\t\t
+        \   <td class=\"underline\"></td>\n\t\t    <td class=\"underline\">sh85127256</td>\n\t\t
+        \ </tr>\n\t\t  <tr>\n\t\t    <td></td>\n\t\t    <td colspan=\"4\">SSW Test</td>\n\t\t
+        \ </tr>\n\t\t</tbody></table><div class=\"nav-pag-bot\"><span class=\"pagination\"><span><a
+        class=\"prev off\" href=\"#\">Previous</a> </span><b>1</b><a href=\"?q=test
+        cs:http://id.loc.gov/authorities/subjects&amp;start=21\">2</a><a href=\"?q=test
+        cs:http://id.loc.gov/authorities/subjects&amp;start=41\">3</a><a href=\"?q=test
+        cs:http://id.loc.gov/authorities/subjects&amp;start=61\">4</a><a href=\"?q=test
+        cs:http://id.loc.gov/authorities/subjects&amp;start=81\">5</a><a href=\"?q=test
+        cs:http://id.loc.gov/authorities/subjects&amp;start=101\">6</a><a href=\"?q=test
+        cs:http://id.loc.gov/authorities/subjects&amp;start=121\">7</a><a href=\"?q=test
+        cs:http://id.loc.gov/authorities/subjects&amp;start=141\">8</a><a href=\"?q=test
+        cs:http://id.loc.gov/authorities/subjects&amp;start=161\">9</a><a href=\"?q=test
+        cs:http://id.loc.gov/authorities/subjects&amp;start=181\">10</a><a href=\"?q=test
+        cs:http://id.loc.gov/authorities/subjects&amp;start=201\">11</a><span>...</span><span>
+        \ <a class=\"next\" href=\"?q=test cs:http://id.loc.gov/authorities/subjects&amp;start=21\">Next</a></span></span></div></div></div></div></div><div
+        id=\"f-wrapper\" class=\"fix-float\"><!-- begin: global footer --><div id=\"footer\"
+        class=\"fix-float\"><div class=\"cols heading\"><h2>Connect with the Library</h2><p><a
+        class=\"ar-more foot\" href=\"//www.loc.gov/homepage/connect.html\">All ways
+        to connect</a></p></div><div class=\"cols\"><h3>Find Us On</h3><a href=\"http://www.facebook.com/libraryofcongress\"><img
+        src=\"/static/images/2012/img-foot/facebook.gif\" alt=\"Facebook\" width=\"16\"
+        height=\"16\"/></a>   <a href=\"//twitter.com/#!/librarycongress\"><img src=\"/static/images/2012/img-foot/twitter.gif\"
+        alt=\"Twitter\" width=\"16\" height=\"16\"/></a>   <a href=\"//www.youtube.com/libraryofcongress\"><img
+        src=\"/static/images/2012/img-foot/youtube.gif\" alt=\"YouTube\" width=\"16\"
+        height=\"16\"/></a>   <a href=\"http://www.flickr.com/photos/library_of_congress/\"><img
+        src=\"/static/images/2012/img-foot/flickr.gif\" alt=\"Flickr\" width=\"16\"
+        height=\"16\"/></a></div><div class=\"cols\"><h3>Subscribe &amp; Comment</h3><ul
+        class=\"plain\">\n\t      <li><a href=\"//www.loc.gov/rss/\">RSS &amp; E-Mail</a></li>\n\t
+        \     <li><a href=\"//blogs.loc.gov/\">Blogs</a></li>\n\t    </ul></div><div
+        class=\"cols\"><h3>Download &amp; Play</h3><ul class=\"plain\">\n\t      <li><a
+        href=\"//www.loc.gov/podcasts/\">Podcasts</a></li>\n\t      <li><a href=\"//www.loc.gov/today/cyberlc/index.php\">Webcasts</a></li>\n\t
+        \     <li><a href=\"//itunes.apple.com/us/institution/library-of-congress/id386017159\"
+        class=\"external foot mod\">iTunesU<span> (external link)</span></a></li>\n\t
+        \   </ul></div><div class=\"cols\"><h3>Questions</h3><ul class=\"plain\">\n\t
+        \     <li><a href=\"//www.loc.gov/rr/askalib/\">Ask a Librarian</a></li>\n\t
+        \     <li><a href=\"//www.loc.gov/help/contact-general.html\" accesskey=\"8\">Contact
+        Us</a></li>\n\t    </ul></div><div class=\"clear\"><!-- --></div><p class=\"links\"><a
+        href=\"//www.loc.gov/about/\">About</a> |\n            <a href=\"//www.loc.gov/pressroom/login\">Press</a>
+        |\n            <a href=\"//www.loc.gov/hr/employment/index.php\">Jobs</a>
+        |\n            <a href=\"//www.loc.gov/philanthropy/index.php\">Donate</a><br/><a
+        href=\"//www.loc.gov/about/oig/\">Inspector General</a> |\n            <a
+        href=\"//www.loc.gov/homepage/legal.html\" accesskey=\"9\">Legal</a> |\n            <a
+        href=\"//www.loc.gov/access/\" accesskey=\"0\">Accessibility</a> |\n            <a
+        href=\"//www.loc.gov/global/disclaim.html\">External Link Disclaimer</a> |\n
+        \           <a href=\"//www.usa.gov/\">USA.gov</a></p><span class=\"speech\"><a
+        href=\"//www.loc.gov/access/web.html\">Speech Enabled</a></span></div><!--
+        end id:footer --><!-- end id:f-wrapper --><!-- end: global footer --></div><div
+        class=\"clear\"><!-- blah --></div></div><div><script type=\"text/javascript\"
+        src=\"//cdn.loc.gov/js/global/metrics/sc/s_code.js\"></script><!-- /DO NOT
+        REMOVE THIS COMMENT. IT WILL CAUSE IE8 PROBLEMS./ --></div></body>\n</html>"}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['704687']
+      Cache-Control: ['public, max-age=1209600']
+      Connection: [keep-alive]
+      Content-Length: ['32371']
+      Content-type: [text/html; charset=UTF-8]
+      Date: ['Sun, 05 Nov 2017 23:32:21 GMT']
+      ETag: [c4309155463ec35c5827074ebfd1cd51]
+      Server: [Apache]
+      Via: [1.1 varnish-v4]
+      X-Cache: [HIT]
+      X-Cache-Hits: ['29']
+      X-Varnish: [7593415 5539716]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.17.3]
+      app_id: [3c2afa0f]
+      app_key: [15ecd0fa9dbdc536326c09065012f76a]
+    method: GET
+    uri: https://od-api.oxforddictionaries.com/api/v1/entries/en/test
+  response:
+    body: {string: "{\n    \"metadata\": {\n        \"provider\": \"Oxford University
+        Press\"\n    },\n    \"results\": [\n        {\n            \"id\": \"test\",\n
+        \           \"language\": \"en\",\n            \"lexicalEntries\": [\n                {\n
+        \                   \"entries\": [\n                        {\n                            \"etymologies\":
+        [\n                                \"late Middle English (denoting a cupel
+        used to treat gold or silver alloys or ore): via Old French from Latin testu,
+        testum \u2018earthen pot\u2019, variant of testa \u2018jug, shell\u2019. Compare
+        with test. The verb dates from the early 17th century\"\n                            ],\n
+        \                           \"grammaticalFeatures\": [\n                                {\n
+        \                                   \"text\": \"Singular\",\n                                    \"type\":
+        \"Number\"\n                                }\n                            ],\n
+        \                           \"homographNumber\": \"100\",\n                            \"senses\":
+        [\n                                {\n                                    \"definitions\":
+        [\n                                        \"a procedure intended to establish
+        the quality, performance, or reliability of something, especially before it
+        is taken into widespread use\"\n                                    ],\n                                    \"examples\":
+        [\n                                        {\n                                            \"text\":
+        \"both countries carried out nuclear tests in May\"\n                                        },\n
+        \                                       {\n                                            \"text\":
+        \"four fax modems are on test\"\n                                        }\n
+        \                                   ],\n                                    \"id\":
+        \"m_en_gbus1042280.006\",\n                                    \"subsenses\":
+        [\n                                        {\n                                            \"definitions\":
+        [\n                                                \"a short written or spoken
+        examination of a person's proficiency or knowledge\"\n                                            ],\n
+        \                                           \"examples\": [\n                                                {\n
+        \                                                   \"text\": \"a spelling
+        test\"\n                                                }\n                                            ],\n
+        \                                           \"id\": \"m_en_gbus1042280.009\"\n
+        \                                       },\n                                        {\n
+        \                                           \"definitions\": [\n                                                \"an
+        event or situation that reveals the strength or quality of someone or something
+        by putting them under strain\"\n                                            ],\n
+        \                                           \"examples\": [\n                                                {\n
+        \                                                   \"text\": \"this is the
+        first serious test of the peace agreement\"\n                                                }\n
+        \                                           ],\n                                            \"id\":
+        \"m_en_gbus1042280.010\"\n                                        },\n                                        {\n
+        \                                           \"definitions\": [\n                                                \"an
+        examination of part of the body or a body fluid for medical purposes, especially
+        by means of a chemical or mechanical procedure rather than simple inspection\"\n
+        \                                           ],\n                                            \"domains\":
+        [\n                                                \"Medicine\"\n                                            ],\n
+        \                                           \"examples\": [\n                                                {\n
+        \                                                   \"text\": \"eye tests\"\n
+        \                                               },\n                                                {\n
+        \                                                   \"text\": \"researchers
+        developed a test for the virus\"\n                                                }\n
+        \                                           ],\n                                            \"id\":
+        \"m_en_gbus1042280.011\"\n                                        },\n                                        {\n
+        \                                           \"definitions\": [\n                                                \"a
+        procedure employed to identify a substance or to reveal the presence or absence
+        of a constituent within a substance.\"\n                                            ],\n
+        \                                           \"domains\": [\n                                                \"Chemistry\"\n
+        \                                           ],\n                                            \"id\":
+        \"m_en_gbus1042280.012\"\n                                        },\n                                        {\n
+        \                                           \"definitions\": [\n                                                \"the
+        result of a medical examination or analytical procedure\"\n                                            ],\n
+        \                                           \"domains\": [\n                                                \"Medicine\"\n
+        \                                           ],\n                                            \"examples\":
+        [\n                                                {\n                                                    \"text\":
+        \"a positive test for protein\"\n                                                }\n
+        \                                           ],\n                                            \"id\":
+        \"m_en_gbus1042280.013\"\n                                        },\n                                        {\n
+        \                                           \"definitions\": [\n                                                \"a
+        means of establishing whether an action, item, or situation is an instance
+        of a specified quality, especially one held to be undesirable\"\n                                            ],\n
+        \                                           \"examples\": [\n                                                {\n
+        \                                                   \"text\": \"a statutory
+        test of obscenity\"\n                                                }\n                                            ],\n
+        \                                           \"id\": \"m_en_gbus1042280.014\"\n
+        \                                       }\n                                    ]\n
+        \                               },\n                                {\n                                    \"crossReferenceMarkers\":
+        [\n                                        \"short for Test match\"\n                                    ],\n
+        \                                   \"crossReferences\": [\n                                        {\n
+        \                                           \"id\": \"test_match\",\n                                            \"text\":
+        \"Test match\",\n                                            \"type\": \"abbreviation\"\n
+        \                                       }\n                                    ],\n
+        \                                   \"examples\": [\n                                        {\n
+        \                                           \"text\": \"the first Test against
+        New Zealand\"\n                                        }\n                                    ],\n
+        \                                   \"id\": \"m_en_gbus1042280.016\",\n                                    \"variantForms\":
+        [\n                                        {\n                                            \"text\":
+        \"Test\"\n                                        }\n                                    ]\n
+        \                               },\n                                {\n                                    \"definitions\":
+        [\n                                        \"a movable hearth in a reverberating
+        furnace, used for separating gold or silver from lead.\"\n                                    ],\n
+        \                                   \"domains\": [\n                                        \"Metallurgy\"\n
+        \                                   ],\n                                    \"id\":
+        \"m_en_gbus1042280.021\"\n                                }\n                            ]\n
+        \                       },\n                        {\n                            \"etymologies\":
+        [\n                                \"mid 19th century: from Latin testa \u2018tile,
+        jug, shell\u2019. Compare with test\"\n                            ],\n                            \"grammaticalFeatures\":
+        [\n                                {\n                                    \"text\":
+        \"Singular\",\n                                    \"type\": \"Number\"\n
+        \                               }\n                            ],\n                            \"homographNumber\":
+        \"300\",\n                            \"senses\": [\n                                {\n
+        \                                   \"definitions\": [\n                                        \"the
+        shell or integument of some invertebrates and protozoans, especially the chalky
+        shell of a foraminiferan or the tough outer layer of a tunicate.\"\n                                    ],\n
+        \                                   \"domains\": [\n                                        \"Zoology\"\n
+        \                                   ],\n                                    \"id\":
+        \"m_en_gbus1042290.005\"\n                                }\n                            ]\n
+        \                       }\n                    ],\n                    \"language\":
+        \"en\",\n                    \"lexicalCategory\": \"Noun\",\n                    \"pronunciations\":
+        [\n                        {\n                            \"audioFile\": \"http://audio.oxforddictionaries.com/en/mp3/test_gb_1.mp3\",\n
+        \                           \"dialects\": [\n                                \"British
+        English\"\n                            ],\n                            \"phoneticNotation\":
+        \"IPA\",\n                            \"phoneticSpelling\": \"t\u025Bst\"\n
+        \                       }\n                    ],\n                    \"text\":
+        \"test\"\n                },\n                {\n                    \"entries\":
+        [\n                        {\n                            \"grammaticalFeatures\":
+        [\n                                {\n                                    \"text\":
+        \"Transitive\",\n                                    \"type\": \"Subcategorization\"\n
+        \                               },\n                                {\n                                    \"text\":
+        \"Present\",\n                                    \"type\": \"Tense\"\n                                }\n
+        \                           ],\n                            \"homographNumber\":
+        \"101\",\n                            \"senses\": [\n                                {\n
+        \                                   \"definitions\": [\n                                        \"take
+        measures to check the quality, performance, or reliability of (something),
+        especially before putting it into widespread use or practice\"\n                                    ],\n
+        \                                   \"domains\": [\n                                        \"Metallurgy\"\n
+        \                                   ],\n                                    \"examples\":
+        [\n                                        {\n                                            \"text\":
+        \"several trial runs were carried out to test the special brakes\"\n                                        },\n
+        \                                       {\n                                            \"text\":
+        \"this range has not been tested on animals\"\n                                        }\n
+        \                                   ],\n                                    \"id\":
+        \"m_en_gbus1042280.023\",\n                                    \"subsenses\":
+        [\n                                        {\n                                            \"definitions\":
+        [\n                                                \"give (someone) a short
+        written or oral examination of their proficiency or knowledge\"\n                                            ],\n
+        \                                           \"examples\": [\n                                                {\n
+        \                                                   \"text\": \"all children
+        are tested at eleven\"\n                                                }\n
+        \                                           ],\n                                            \"id\":
+        \"m_en_gbus1042280.029\"\n                                        },\n                                        {\n
+        \                                           \"definitions\": [\n                                                \"judge
+        or measure (someone's proficiency or knowledge) by means of a test\"\n                                            ],\n
+        \                                           \"examples\": [\n                                                {\n
+        \                                                   \"text\": \"the exam will
+        test accuracy and neatness\"\n                                                }\n
+        \                                           ],\n                                            \"id\":
+        \"m_en_gbus1042280.030\"\n                                        },\n                                        {\n
+        \                                           \"definitions\": [\n                                                \"reveal
+        the strengths or capabilities of (someone or something) by putting them under
+        strain\"\n                                            ],\n                                            \"examples\":
+        [\n                                                {\n                                                    \"text\":
+        \"such behaviour would severely test any marriage\"\n                                                }\n
+        \                                           ],\n                                            \"id\":
+        \"m_en_gbus1042280.031\"\n                                        },\n                                        {\n
+        \                                           \"definitions\": [\n                                                \"carry
+        out a medical test on (a person, a part of the body, or a body fluid)\"\n
+        \                                           ],\n                                            \"domains\":
+        [\n                                                \"Medicine\"\n                                            ],\n
+        \                                           \"examples\": [\n                                                {\n
+        \                                                   \"text\": \"he's been
+        tested for drugs\"\n                                                }\n                                            ],\n
+        \                                           \"id\": \"m_en_gbus1042280.032\"\n
+        \                                       },\n                                        {\n
+        \                                           \"definitions\": [\n                                                \"produce
+        a specified result in a medical test, especially a drugs test or AIDS test\"\n
+        \                                           ],\n                                            \"domains\":
+        [\n                                                \"Medicine\"\n                                            ],\n
+        \                                           \"examples\": [\n                                                {\n
+        \                                                   \"text\": \"he tested
+        positive for steroids during the race\"\n                                                }\n
+        \                                           ],\n                                            \"id\":
+        \"m_en_gbus1042280.033\",\n                                            \"notes\":
+        [\n                                                {\n                                                    \"text\":
+        \"no object, with complement\",\n                                                    \"type\":
+        \"grammaticalNote\"\n                                                }\n                                            ]\n
+        \                                       },\n                                        {\n
+        \                                           \"definitions\": [\n                                                \"examine
+        (a substance) by means of a reagent.\"\n                                            ],\n
+        \                                           \"domains\": [\n                                                \"Chemistry\"\n
+        \                                           ],\n                                            \"id\":
+        \"m_en_gbus1042280.034\"\n                                        },\n                                        {\n
+        \                                           \"definitions\": [\n                                                \"touch
+        or taste (something) to check that it is acceptable before proceeding further\"\n
+        \                                           ],\n                                            \"examples\":
+        [\n                                                {\n                                                    \"text\":
+        \"she tested the water with the tip of her elbow\"\n                                                }\n
+        \                                           ],\n                                            \"id\":
+        \"m_en_gbus1042280.035\"\n                                        }\n                                    ]\n
+        \                               }\n                            ]\n                        }\n
+        \                   ],\n                    \"language\": \"en\",\n                    \"lexicalCategory\":
+        \"Verb\",\n                    \"pronunciations\": [\n                        {\n
+        \                           \"audioFile\": \"http://audio.oxforddictionaries.com/en/mp3/test_gb_1.mp3\",\n
+        \                           \"dialects\": [\n                                \"British
+        English\"\n                            ],\n                            \"phoneticNotation\":
+        \"IPA\",\n                            \"phoneticSpelling\": \"t\u025Bst\"\n
+        \                       }\n                    ],\n                    \"text\":
+        \"test\"\n                }\n            ],\n            \"type\": \"headword\",\n
+        \           \"word\": \"test\"\n        }\n    ]\n}"}
+    headers:
+      Connection: [keep-alive]
+      Content-Length: ['18105']
+      Content-Type: [application/json;charset=utf-8]
+      Date: ['Tue, 14 Nov 2017 03:17:09 GMT']
+      Server: [openresty/1.9.7.4]
+      version: [v3.6.1-19-g626045a]
+    status: {code: 200, message: OK}
+version: 1

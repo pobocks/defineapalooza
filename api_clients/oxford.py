@@ -1,5 +1,10 @@
 from .common import *
 
+def FSFactory():
+    s = FuturesSession(max_workers=4)
+    s.headers.update(current_app.config['OXFORD_API_INFO'])
+    return s
+
 @attr.s(slots=True)
 class OxfordClient:
     headers = attr.ib(default=Factory(dict))
@@ -20,7 +25,7 @@ class OxfordClient:
         '''Callback that queues request for word data for first search result, storing it in data property of response'''
         def failure():
             return False
-        
+
         if resp.status_code == 200:
             try:
                 resp.callback_result = self.definition_request(resp.json()['results'][0]['id'])
@@ -33,10 +38,10 @@ class OxfordClient:
 
         def output():
             res = final_result.result()
-            
+
             try:
                 return res.callback_result.result().json()['results'][0]['lexicalEntries']
             except:
                 return False
-            
+
         return self.session.executor.submit(output)

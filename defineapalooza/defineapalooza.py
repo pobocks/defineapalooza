@@ -5,7 +5,7 @@ from flask_bootstrap import Bootstrap
 # Note: shorthanding n?gettext
 from flask_babel import Babel, gettext as gt, ngettext as gts
 
-from flask_wtf import Form
+from flask_wtf import FlaskForm as Form
 from flask_wtf.csrf import CsrfProtect
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
@@ -55,7 +55,7 @@ class WordForm(Form):
 @app.route("/")
 def home():
     '''Our glorious homepage, reknowned in story and song!'''
-    return render_template('index.html', word_form=WordForm()) 
+    return render_template('index.html', word_form=WordForm())
 
 @app.route("/", methods=["POST"])
 def fetch_word():
