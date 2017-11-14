@@ -11,7 +11,7 @@ chardet==3.0.4
 click==6.7
 colorama==0.3.7
 decorator==4.0.11
--e git+git@github.com:pobocks/defineapalooza.git@9a08e8cd181e94f3b2302672962a4ef371d01755#egg=defineapalooza
+-e git+git@github.com:pobocks/defineapalooza.git@436153560cb3a32d750560b4a8d8bea8183677c3#egg=defineapalooza
 docutils==0.13.1
 dominate==2.3.1
 entrypoints==0.2.2

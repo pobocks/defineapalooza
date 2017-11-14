@@ -14,7 +14,7 @@ set :shared_virtualenv, true
 
 set :pty, true
 
-set :linked_files, %w{run.wsgi}
+set :linked_files, %w{wsgi.py uwsgi.ini}
 set :linked_dirs, %w{instance}
 
 set :keep_releases, 3
