@@ -21,8 +21,10 @@
 {% macro entry(an_entry) %}
 <div class="entry">
   {% for a_sense in an_entry['senses'] %}
+  {% if 'definitions' in a_sense %}
   <p>Sense {{loop.index}}</p>
   {{sense(a_sense)}}
+  {% endif %}
   {% endfor %}
 </div>
 {% endmacro %}
