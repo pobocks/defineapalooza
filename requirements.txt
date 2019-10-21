@@ -86,7 +86,7 @@ terminado==0.6
 testpath==0.3
 tornado==4.4.2
 traitlets==4.3.1
-urllib3==1.21.1
+urllib3==1.24.2
 -e git+git@github.com:kevin1024/vcrpy.git@a56a0726d4f325f963696087d83c82b78e2a3464#egg=vcrpy
 virtualenv==15.1.0
 virtualenvwrapper-win==1.2.2
