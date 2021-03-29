@@ -61,7 +61,7 @@ ptyprocess==0.5.2
 py==1.4.34
 pyaml==17.10.0
 pyflakes==1.5.0
-Pygments==2.2.0
+Pygments==2.7.4
 pylint==1.7.1
 pytest==3.2.3
 pytest-flask==0.10.0
