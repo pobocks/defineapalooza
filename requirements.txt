@@ -47,7 +47,7 @@ mistune==0.7.3
 multidict==3.3.2
 nbconvert==5.1.1
 nbformat==4.2.0
-notebook==4.4.1
+notebook==6.4.10
 numpy==1.13.1
 numpydoc==0.6.0
 pandas==0.20.3
