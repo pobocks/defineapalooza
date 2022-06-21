@@ -48,7 +48,7 @@ multidict==3.3.2
 nbconvert==5.1.1
 nbformat==4.2.0
 notebook==4.4.1
-numpy==1.13.1
+numpy==1.22.0
 numpydoc==0.6.0
 pandas==0.20.3
 pandocfilters==1.4.1
